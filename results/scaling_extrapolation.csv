@@ -1,0 +1,5 @@
+corpus_chunks,cross_encoder_all (s/query),two-stage: bi top-10 + CE (s/query),CE-all human time
+141,1.66,0.125,0 days 00:00:01.660000
+10000,117.39,0.125,0 days 00:01:57.390000
+1000000,11738.72,0.125,0 days 03:15:38.720000
+100000000,1173871.83,0.125,13 days 14:04:31.830000

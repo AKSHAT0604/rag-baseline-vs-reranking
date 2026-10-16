@@ -1,0 +1,9 @@
+pymupdf>=1.26
+sentence-transformers>=5.0
+faiss-cpu>=1.9
+transformers>=4.57
+accelerate
+torch>=2.4
+numpy
+pandas
+ipykernel

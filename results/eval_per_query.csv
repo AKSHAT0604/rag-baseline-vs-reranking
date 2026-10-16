@@ -1,0 +1,62 @@
+query,gold,bi_rank,ce_rank,effect
+What happens if a player's mobile phone is found on them during the game?,11.3.2.2,1.0,2.0,no top-3 change
+What is the penalty for making an illegal move a second time?,7.5.5,2.0,1.0,no top-3 change
+"In a rapid game, what happens if nobody notices an illegal move?",A.5.2,4.0,1.0,rescued into top-3
+Can a player castle if the rook is under attack?,3.8.2.2,2.0,2.0,no top-3 change
+My opponent ran out of time but I only have a bare king left. Do I win?,6.9,3.0,5.0,pushed out of top-3
+"If a player resigns but the opponent has only a king, what is the result?",5.1.2,1.0,1.0,no top-3 change
+Is a player allowed to leave the playing area while it is their turn to move?,11.2.3.2,1.0,2.0,no top-3 change
+Can the arbiter tell a player that they forgot to press their clock?,12.6,1.0,2.0,no top-3 change
+Can a spectator point out an illegal move to the players?,12.7,3.0,5.0,pushed out of top-3
+When is a player supposed to offer a draw?,9.1.2.1,1.0,1.0,no top-3 change
+Can a pawn be promoted to a second queen even if no queen has been captured?,3.7.3.4,1.0,1.0,no top-3 change
+A pawn reaches the last rank and the player presses the clock without swapping it. What happens?,7.5.2,1.0,1.0,no top-3 change
+What is the penalty for an incorrect draw claim in rapid chess?,A.3,6.0,2.0,rescued into top-3
+How much extra time does the opponent get after a first illegal move in a blitz game?,"A.3, B.3",3.0,8.0,pushed out of top-3
+Is a game drawn automatically without any claim after a long series of moves with no captures?,9.6.2,4.0,1.0,rescued into top-3
+Does a player have to keep writing down moves when very short of time?,8.4,7.0,1.0,rescued into top-3
+Can a player castle in a rapid game if the king was set up on the wrong square?,A.5.1.2,2.0,1.0,no top-3 change
+Is smoking allowed in the playing area?,11.3.4,1.0,2.0,no top-3 change
+When can I straighten pieces on their squares without having to move them?,4.2.1,2.0,1.0,no top-3 change
+"If I touch my rook first and then my king, can I still castle?",4.4.2,1.0,1.0,no top-3 change
+What happens if the board was placed the wrong way round at the start?,7.2.2,1.0,1.0,no top-3 change
+What happens if a player arrives late for the game?,6.7.1,5.0,4.0,no top-3 change
+When is a player permitted to stop the clocks?,6.11.2,2.0,2.0,no top-3 change
+Can a player look at their notebook with opening analysis during play?,11.3.1,1.0,1.0,no top-3 change
+Can the players agree a draw before any moves are made?,5.2.3,5.0,4.0,no top-3 change
+"If the 75th move delivers checkmate, is the game a draw or a win?",9.6.2,2.0,2.0,no top-3 change
+Can the arbiter announce a flag fall in a rapid game?,A.5.5,1.0,1.0,no top-3 change
+Is a king allowed to capture the opponent's king?,1.4.1,1.0,1.0,no top-3 change
+What does the arbiter do if both kings are in check in a blitz game?,A.5.4,3.0,1.0,no top-3 change
+Is it permitted to castle through a square controlled by an enemy piece?,3.8.2.2,1.0,2.0,no top-3 change
+Who can a player tell if they notice an irregularity in another game?,12.7,3.0,1.0,no top-3 change
+Can a player claim a draw by repetition after pressing the clock?,9.2.2,2.0,4.0,pushed out of top-3
+Is it forbidden to keep my hand hovering over the clock?,6.2.3,1.0,1.0,no top-3 change
+What punishments can the arbiter give for bad behaviour?,"12.9.1, 12.9.4",2.0,1.0,no top-3 change
+Can colours be swapped if the game started with the wrong colours?,7.3,1.0,1.0,no top-3 change
+Can a player who does not have the move adjust the pieces?,"6.2.5, 4.2.1",1.0,1.0,no top-3 change
+Is a player allowed to write their moves on the scoresheet before playing them?,8.1.2,2.0,3.0,no top-3 change
+Can a player withdraw a draw claim once it has been made?,9.5.1,2.0,1.0,no top-3 change
+Can a draw offer be taken back?,9.1.2.1,1.0,1.0,no top-3 change
+Is a player allowed to keep a switched-off phone in their bag?,11.3.2.1,1.0,1.0,no top-3 change
+Can a claim be based only on the move count shown on a demonstration board?,6.12.2,,,no top-3 change
+Is the arbiter allowed to tell players how many moves have been made?,12.6,2.0,7.0,pushed out of top-3
+Can a pawn be promoted to a king?,3.7.3.3,1.0,1.0,no top-3 change
+Is the time spent before pressing the clock counted against the player?,6.2.2,4.0,1.0,rescued into top-3
+Can a player appeal after signing the scoresheet?,11.10,1.0,1.0,no top-3 change
+Can you castle out of check?,3.8.2.2,1.0,1.0,no top-3 change
+Can the king castle if it moved earlier but went back to its original square?,3.8.2.1,1.0,1.0,no top-3 change
+What happens if my opponent keeps offering draws just to annoy me?,11.5,3.0,1.0,no top-3 change
+Is a player who has finished their game allowed to stand and watch other games?,11.4,3.0,1.0,no top-3 change
+What happens if a player refuses to have their bag inspected?,11.3.3,1.0,1.0,no top-3 change
+Can the clock settings be changed after ten moves in a rapid game?,A.5.1.1,1.0,1.0,no top-3 change
+Is it prohibited to analyse the position on another board during the game?,11.3.1,1.0,1.0,no top-3 change
+Which pieces is a pawn not allowed to promote to?,3.7.3.3,3.0,2.0,no top-3 change
+Is a player who is not on move allowed to leave the playing area without permission?,"11.2.4, 11.2.3.2",1.0,1.0,no top-3 change
+Can a player use two hands to castle?,"7.5.4, 4.1",4.0,1.0,rescued into top-3
+Can a game be won on time if the opponent has insufficient material?,6.9,10.0,4.0,no top-3 change
+What happens if the player having the move touches an opponent's piece?,4.3.2,1.0,2.0,no top-3 change
+Is an en passant capture still possible two moves later?,3.7.3.2,1.0,1.0,no top-3 change
+What score does a player get for a game lost by forfeit?,10.1,1.0,1.0,no top-3 change
+What is the punishment for having a mobile phone ring in the hall?,11.3.2.2,1.0,2.0,no top-3 change
+Who is allowed to enter the playing area besides players and arbiters?,11.2.3.3,1.0,1.0,no top-3 change

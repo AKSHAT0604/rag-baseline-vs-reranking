@@ -1,0 +1,9 @@
+category,query,gold,gold_chunk,bi_rank,ce_rank,shift,in_top3_baseline,in_top3_rerank
+Keyword trap / distractor,Can a player use two hands to castle?,"4.1, 7.5.4",15,4,1,Chunk 15: #4 → #1,False,True
+Keyword trap / synonyms,Does a player have to keep writing down moves when very short of time?,8.4,44,7,1,Chunk 44: #7 → #1,False,True
+Exception / corner case,"In a rapid game, what happens if nobody notices an illegal move?",A.5.2,68,4,1,Chunk 68: #4 → #1,False,True
+Exception / penalty located elsewhere,What is the penalty for an incorrect draw claim in rapid chess?,A.3,65,6,2,Chunk 65: #6 → #2,False,True
+Negation & constraints,Is a game drawn automatically without any claim after a long series of moves with no captures?,9.6.2,53,4,1,Chunk 53: #4 → #1,False,True
+Other: vital chunk buried at rank 4-10,Is the time spent before pressing the clock counted against the player?,6.2.2,26,4,1,Chunk 26: #4 → #1,False,True
+Counter-example: re-ranking hurts,My opponent ran out of time but I only have a bare king left. Do I win?,6.9,32,3,5,Chunk 32: #3 → #5,True,False
+Counter-example: re-ranking hurts (negation),Is the arbiter allowed to tell players how many moves have been made?,12.6,62,2,7,Chunk 62: #2 → #7,True,False

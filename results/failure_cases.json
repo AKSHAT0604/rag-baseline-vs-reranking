@@ -1,0 +1,1019 @@
+[
+  {
+    "category": "Keyword trap / distractor",
+    "query": "Can a player use two hands to castle?",
+    "gold": [
+      "4.1",
+      "7.5.4"
+    ],
+    "why": "The word 'castle' pulls in the castling-procedure clauses (3.8.x, 4.4.x). The rule is in Art. 4.1 ('one hand only'), and the penalty is in 7.5.4, which never mentions castling as a topic.",
+    "gold_chunk": 15,
+    "baseline_rank": 4,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "4.4.2",
+      "4.3.2",
+      "3.8.2.1"
+    ],
+    "rerank_top3": [
+      "7.5.2",
+      "II.2.3",
+      "4.4.2"
+    ],
+    "answer1": "The provided context does not answer this.",
+    "answer2": "No, according to Article 7.5.4, if a player uses two hands to make a single move (such as in case of castling) and presses the clock, it shall be considered and penalised as if an illegal move.",
+    "llm_s_1": 3.5301949000004242,
+    "llm_s_2": 11.009550499999932,
+    "table": [
+      {
+        "chunk": 38,
+        "clauses": "7.5.2, 7.5.3, 7.5.4",
+        "bi_rank": 9,
+        "cosine": 0.324,
+        "ce_rank": 1,
+        "ce_score": -0.09,
+        "shift": 8,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 98,
+        "clauses": "II.2.3, II.3, II.3.1",
+        "bi_rank": 5,
+        "cosine": 0.376,
+        "ce_rank": 2,
+        "ce_score": -0.18,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 17,
+        "clauses": "4.4.2, 4.4.3, 4.4.4",
+        "bi_rank": 1,
+        "cosine": 0.454,
+        "ce_rank": 3,
+        "ce_score": -0.56,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 16,
+        "clauses": "4.3.2, 4.3.3, 4.4, 4.4.1",
+        "bi_rank": 2,
+        "cosine": 0.421,
+        "ce_rank": 4,
+        "ce_score": -3.54,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 15,
+        "clauses": "4.1, 4.2, 4.2.1, 4.2.2, 4.3",
+        "bi_rank": 4,
+        "cosine": 0.417,
+        "ce_rank": 5,
+        "ce_score": -4.66,
+        "shift": -1,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 99,
+        "clauses": "II.3.2, II.3.2.1, II.3.2.2, II.3.2.3, II.3.2.4",
+        "bi_rank": 6,
+        "cosine": 0.359,
+        "ce_rank": 6,
+        "ce_score": -4.87,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 102,
+        "clauses": "II.3.2.7",
+        "bi_rank": 10,
+        "cosine": 0.321,
+        "ce_rank": 7,
+        "ce_score": -6.06,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 12,
+        "clauses": "3.8.2.1, 3.8.2.2, 3.9",
+        "bi_rank": 3,
+        "cosine": 0.418,
+        "ce_rank": 8,
+        "ce_score": -6.5,
+        "shift": -5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 26,
+        "clauses": "6.2.1.2, 6.2.2, 6.2.3",
+        "bi_rank": 7,
+        "cosine": 0.349,
+        "ce_rank": 9,
+        "ce_score": -8.19,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 84,
+        "clauses": "D.2.6.1, D.2.6.2",
+        "bi_rank": 8,
+        "cosine": 0.339,
+        "ce_rank": 10,
+        "ce_score": -8.75,
+        "shift": -2,
+        "GOLD": ""
+      }
+    ]
+  },
+  {
+    "category": "Keyword trap / synonyms",
+    "query": "Does a player have to keep writing down moves when very short of time?",
+    "gold": [
+      "8.4"
+    ],
+    "why": "The query says 'writing down' and 'short of time'; Art. 8.4 says 'not obliged to meet the requirements of Article 8.1.1' and 'less than five minutes'. No shared vocabulary.",
+    "gold_chunk": 44,
+    "baseline_rank": 7,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "8.6",
+      "8.1.3",
+      "A.1"
+    ],
+    "rerank_top3": [
+      "8.4",
+      "I.1",
+      "A.1"
+    ],
+    "answer1": "No, a player does not have to keep writing down moves when very short of time, as per Article 8.6 of the FIDE Laws of Chess, which states that if the scoresheets cannot be updated due to time constraints, the next move is considered the start of the next time period.",
+    "answer2": "Yes, according to Article 8.4 from Passage 1, if a player has less than five minutes left on their clock during an allotted period and does not have additional time added, they are not obliged to meet the requirements of recording moves.",
+    "llm_s_1": 13.151329700000133,
+    "llm_s_2": 11.466648999999961,
+    "table": [
+      {
+        "chunk": 44,
+        "clauses": "8.4, 8.5, 8.5.1",
+        "bi_rank": 7,
+        "cosine": 0.496,
+        "ce_rank": 1,
+        "ce_score": 2.86,
+        "shift": 6,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 89,
+        "clauses": "I.1, I.1.1",
+        "bi_rank": 9,
+        "cosine": 0.493,
+        "ce_rank": 2,
+        "ce_score": 2.18,
+        "shift": 7,
+        "GOLD": ""
+      },
+      {
+        "chunk": 65,
+        "clauses": "A.1, A.2, A.3, A.4",
+        "bi_rank": 3,
+        "cosine": 0.537,
+        "ce_rank": 3,
+        "ce_score": 0.78,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 104,
+        "clauses": "III.3.1.2, III.4",
+        "bi_rank": 8,
+        "cosine": 0.496,
+        "ce_rank": 4,
+        "ce_score": -1.33,
+        "shift": 4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 46,
+        "clauses": "8.6, 8.7",
+        "bi_rank": 1,
+        "cosine": 0.589,
+        "ce_rank": 5,
+        "ce_score": -1.56,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 121,
+        "clauses": "Glossary",
+        "bi_rank": 4,
+        "cosine": 0.521,
+        "ce_rank": 6,
+        "ce_score": -2.73,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 45,
+        "clauses": "8.5.2, 8.5.3",
+        "bi_rank": 10,
+        "cosine": 0.49,
+        "ce_rank": 7,
+        "ce_score": -3.01,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 42,
+        "clauses": "8.1.3, 8.1.4, 8.1.5",
+        "bi_rank": 2,
+        "cosine": 0.538,
+        "ce_rank": 8,
+        "ce_score": -3.15,
+        "shift": -6,
+        "GOLD": ""
+      },
+      {
+        "chunk": 41,
+        "clauses": "8.1, 8.1.1, 8.1.1.1, 8.1.1.2, 8.1.2",
+        "bi_rank": 6,
+        "cosine": 0.496,
+        "ce_rank": 9,
+        "ce_score": -4.35,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 66,
+        "clauses": "A.4.1, A.4.2, A.4.3, A.5, A.5.1",
+        "bi_rank": 5,
+        "cosine": 0.502,
+        "ce_rank": 10,
+        "ce_score": -5.61,
+        "shift": -5,
+        "GOLD": ""
+      }
+    ]
+  },
+  {
+    "category": "Exception / corner case",
+    "query": "In a rapid game, what happens if nobody notices an illegal move?",
+    "gold": [
+      "A.5.2"
+    ],
+    "why": "The general illegal-move rule (7.5.x) dominates; the rapid-chess exception that lets the illegal move STAND lives in Appendix A.5.2.",
+    "gold_chunk": 68,
+    "baseline_rank": 4,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "7.5.1",
+      "7.5.5",
+      "A.5.3"
+    ],
+    "rerank_top3": [
+      "A.5.2",
+      "7.5.1",
+      "A.5.3"
+    ],
+    "answer1": "If nobody notices an illegal move in a rapid game, the position immediately before the irregularity shall be reinstated. If the position cannot be determined, the game shall continue from the last identifiable position prior to the irregularity.",
+    "answer2": "If nobody notices an illegal move and the opponent has not made their next move, the illegal move stands and the game continues. If the opponent makes their next move, the illegal move cannot be corrected unless both players agree without the arbiter's intervention.",
+    "llm_s_1": 10.14736559999983,
+    "llm_s_2": 11.141374200000428,
+    "table": [
+      {
+        "chunk": 68,
+        "clauses": "A.5.2",
+        "bi_rank": 4,
+        "cosine": 0.545,
+        "ce_rank": 1,
+        "ce_score": 4.09,
+        "shift": 3,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 37,
+        "clauses": "7.5.1",
+        "bi_rank": 1,
+        "cosine": 0.645,
+        "ce_rank": 2,
+        "ce_score": 2.22,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 69,
+        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
+        "bi_rank": 3,
+        "cosine": 0.552,
+        "ce_rank": 3,
+        "ce_score": 1.92,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 39,
+        "clauses": "7.5.5",
+        "bi_rank": 2,
+        "cosine": 0.601,
+        "ce_rank": 4,
+        "ce_score": 0.39,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 38,
+        "clauses": "7.5.2, 7.5.3, 7.5.4",
+        "bi_rank": 5,
+        "cosine": 0.525,
+        "ce_rank": 5,
+        "ce_score": 0.04,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 65,
+        "clauses": "A.1, A.2, A.3, A.4",
+        "bi_rank": 7,
+        "cosine": 0.512,
+        "ce_rank": 6,
+        "ce_score": -1.94,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 63,
+        "clauses": "12.7, 12.8, 12.9, 12.9.1, 12.9.2",
+        "bi_rank": 9,
+        "cosine": 0.5,
+        "ce_rank": 7,
+        "ce_score": -7.25,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 21,
+        "clauses": "4.8, 4.9",
+        "bi_rank": 8,
+        "cosine": 0.501,
+        "ce_rank": 8,
+        "ce_score": -7.53,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 87,
+        "clauses": "D.2.10.1, D.2.10.2, D.2.10.3, D.2.10.4, D.2.10.5",
+        "bi_rank": 10,
+        "cosine": 0.495,
+        "ce_rank": 9,
+        "ce_score": -9.55,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 59,
+        "clauses": "11.5, 11.6, 11.7, 11.8",
+        "bi_rank": 6,
+        "cosine": 0.524,
+        "ce_rank": 10,
+        "ce_score": -9.9,
+        "shift": -4,
+        "GOLD": ""
+      }
+    ]
+  },
+  {
+    "category": "Exception / penalty located elsewhere",
+    "query": "What is the penalty for an incorrect draw claim in rapid chess?",
+    "gold": [
+      "A.3"
+    ],
+    "why": "Art. 9.5.3 says the opponent gets two minutes, but Appendix A.3 overrides it to ONE minute in rapid.",
+    "gold_chunk": 65,
+    "baseline_rank": 6,
+    "rerank_rank": 2,
+    "baseline_top3": [
+      "9.5.1",
+      "A.5.3",
+      "III.5"
+    ],
+    "rerank_top3": [
+      "9.5.1",
+      "A.1",
+      "A.5.3"
+    ],
+    "answer1": "According to Article 9.5.3 of Passage 1, if the claim of a draw is found to be incorrect, the arbiter shall add two minutes to the opponent's remaining thinking time. Therefore, the penalty for an incorrect draw claim in rapid chess is an addition of two minutes to the opponent's thinking time.",
+    "answer2": "The penalty for an incorrect draw claim in rapid chess is one minute added to the opponent's remaining thinking time.",
+    "llm_s_1": 14.693330699999933,
+    "llm_s_2": 6.464651700000104,
+    "table": [
+      {
+        "chunk": 52,
+        "clauses": "9.5.1, 9.5.2, 9.5.3, 9.6, 9.6.1",
+        "bi_rank": 1,
+        "cosine": 0.721,
+        "ce_rank": 1,
+        "ce_score": 2.57,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 65,
+        "clauses": "A.1, A.2, A.3, A.4",
+        "bi_rank": 6,
+        "cosine": 0.6,
+        "ce_rank": 2,
+        "ce_score": 1.94,
+        "shift": 4,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 69,
+        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
+        "bi_rank": 2,
+        "cosine": 0.664,
+        "ce_rank": 3,
+        "ce_score": 1.86,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 68,
+        "clauses": "A.5.2",
+        "bi_rank": 9,
+        "cosine": 0.591,
+        "ce_rank": 4,
+        "ce_score": 0.51,
+        "shift": 5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 59,
+        "clauses": "11.5, 11.6, 11.7, 11.8",
+        "bi_rank": 10,
+        "cosine": 0.581,
+        "ce_rank": 5,
+        "ce_score": 0.41,
+        "shift": 5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 119,
+        "clauses": "Glossary",
+        "bi_rank": 8,
+        "cosine": 0.599,
+        "ce_rank": 6,
+        "ce_score": -0.51,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 49,
+        "clauses": "9.1.2.3, 9.2, 9.2.1, 9.2.2",
+        "bi_rank": 4,
+        "cosine": 0.621,
+        "ce_rank": 7,
+        "ce_score": -0.55,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 105,
+        "clauses": "III.5, III.5.1",
+        "bi_rank": 3,
+        "cosine": 0.646,
+        "ce_rank": 8,
+        "ce_score": -0.59,
+        "shift": -5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 60,
+        "clauses": "11.9, 11.10, 11.11, 11.12",
+        "bi_rank": 5,
+        "cosine": 0.615,
+        "ce_rank": 9,
+        "ce_score": -3.03,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 51,
+        "clauses": "9.3.1, 9.3.2, 9.4, 9.5",
+        "bi_rank": 7,
+        "cosine": 0.599,
+        "ce_rank": 10,
+        "ce_score": -3.29,
+        "shift": -3,
+        "GOLD": ""
+      }
+    ]
+  },
+  {
+    "category": "Negation & constraints",
+    "query": "Is a game drawn automatically without any claim after a long series of moves with no captures?",
+    "gold": [
+      "9.6.2"
+    ],
+    "why": "'without any claim' is a negation. The bi-encoder favours chunks about claims (50-move CLAIM, 9.3), while the automatic 75-move rule is 9.6.2.",
+    "gold_chunk": 53,
+    "baseline_rank": 4,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "9.1.2.3",
+      "9.5.1",
+      "9.3.1"
+    ],
+    "rerank_top3": [
+      "9.6.2",
+      "9.3.1",
+      "III.5"
+    ],
+    "answer1": "Yes, according to Article 9.6.1, if the same position appears at least five times due to a series of moves with no pawn moves or captures, the game is automatically drawn.",
+    "answer2": "Yes, if a series of at least 75 moves have been made by each player without the movement of any pawn and without any capture, the game is automatically drawn according to Article 9.6.2.",
+    "llm_s_1": 9.6090578000003,
+    "llm_s_2": 9.872726800000237,
+    "table": [
+      {
+        "chunk": 53,
+        "clauses": "9.6.2",
+        "bi_rank": 4,
+        "cosine": 0.61,
+        "ce_rank": 1,
+        "ce_score": 5.36,
+        "shift": 3,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 51,
+        "clauses": "9.3.1, 9.3.2, 9.4, 9.5",
+        "bi_rank": 3,
+        "cosine": 0.622,
+        "ce_rank": 2,
+        "ce_score": 4.97,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 105,
+        "clauses": "III.5, III.5.1",
+        "bi_rank": 5,
+        "cosine": 0.595,
+        "ce_rank": 3,
+        "ce_score": 3.52,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 69,
+        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
+        "bi_rank": 8,
+        "cosine": 0.559,
+        "ce_rank": 4,
+        "ce_score": 3.23,
+        "shift": 4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 52,
+        "clauses": "9.5.1, 9.5.2, 9.5.3, 9.6, 9.6.1",
+        "bi_rank": 2,
+        "cosine": 0.628,
+        "ce_rank": 5,
+        "ce_score": 3.12,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 49,
+        "clauses": "9.1.2.3, 9.2, 9.2.1, 9.2.2",
+        "bi_rank": 1,
+        "cosine": 0.633,
+        "ce_rank": 6,
+        "ce_score": 3.04,
+        "shift": -5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 107,
+        "clauses": "III.6.1, III.6.1.1, III.6.1.2, III.6.1.1, III.6.2",
+        "bi_rank": 7,
+        "cosine": 0.56,
+        "ce_rank": 7,
+        "ce_score": 2.06,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 104,
+        "clauses": "III.3.1.2, III.4",
+        "bi_rank": 6,
+        "cosine": 0.565,
+        "ce_rank": 8,
+        "ce_score": 1.72,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 60,
+        "clauses": "11.9, 11.10, 11.11, 11.12",
+        "bi_rank": 9,
+        "cosine": 0.551,
+        "ce_rank": 9,
+        "ce_score": -2.54,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 46,
+        "clauses": "8.6, 8.7",
+        "bi_rank": 10,
+        "cosine": 0.533,
+        "ce_rank": 10,
+        "ce_score": -4.93,
+        "shift": 0,
+        "GOLD": ""
+      }
+    ]
+  },
+  {
+    "category": "Other: vital chunk buried at rank 4-10",
+    "query": "Is the time spent before pressing the clock counted against the player?",
+    "gold": [
+      "6.2.2"
+    ],
+    "why": "Generic clock vocabulary is spread across Article 6; the specific sentence is in 6.2.2.",
+    "gold_chunk": 26,
+    "baseline_rank": 4,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "6.3.2",
+      "8.4",
+      "III.3.1.2"
+    ],
+    "rerank_top3": [
+      "6.2.1.2",
+      "6.3.2",
+      "6.2.4"
+    ],
+    "answer1": "No, the time spent before pressing the clock is not counted against the player; it is added to the main thinking time.",
+    "answer2": "The time spent before pressing the clock is considered part of the time allotted to the player.",
+    "llm_s_1": 6.687825400000293,
+    "llm_s_2": 5.319541099999697,
+    "table": [
+      {
+        "chunk": 26,
+        "clauses": "6.2.1.2, 6.2.2, 6.2.3",
+        "bi_rank": 4,
+        "cosine": 0.584,
+        "ce_rank": 1,
+        "ce_score": 2.13,
+        "shift": 3,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 29,
+        "clauses": "6.3.2, 6.4",
+        "bi_rank": 1,
+        "cosine": 0.62,
+        "ce_rank": 2,
+        "ce_score": 1.45,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 27,
+        "clauses": "6.2.4, 6.2.5, 6.2.6, 6.3",
+        "bi_rank": 5,
+        "cosine": 0.562,
+        "ce_rank": 3,
+        "ce_score": 0.66,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 111,
+        "clauses": "Glossary",
+        "bi_rank": 8,
+        "cosine": 0.548,
+        "ce_rank": 4,
+        "ce_score": 0.3,
+        "shift": 4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 44,
+        "clauses": "8.4, 8.5, 8.5.1",
+        "bi_rank": 2,
+        "cosine": 0.607,
+        "ce_rank": 5,
+        "ce_score": -1.41,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 25,
+        "clauses": "6.1, 6.2, 6.2.1, 6.2.1.1",
+        "bi_rank": 7,
+        "cosine": 0.558,
+        "ce_rank": 6,
+        "ce_score": -2.48,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 104,
+        "clauses": "III.3.1.2, III.4",
+        "bi_rank": 3,
+        "cosine": 0.593,
+        "ce_rank": 7,
+        "ce_score": -2.76,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 121,
+        "clauses": "Glossary",
+        "bi_rank": 9,
+        "cosine": 0.547,
+        "ce_rank": 8,
+        "ce_score": -6.43,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 84,
+        "clauses": "D.2.6.1, D.2.6.2",
+        "bi_rank": 6,
+        "cosine": 0.559,
+        "ce_rank": 9,
+        "ce_score": -6.78,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 46,
+        "clauses": "8.6, 8.7",
+        "bi_rank": 10,
+        "cosine": 0.542,
+        "ce_rank": 10,
+        "ce_score": -7.73,
+        "shift": 0,
+        "GOLD": ""
+      }
+    ]
+  },
+  {
+    "category": "Counter-example: re-ranking hurts",
+    "query": "My opponent ran out of time but I only have a bare king left. Do I win?",
+    "gold": [
+      "6.9"
+    ],
+    "why": "The 'however, drawn if the opponent cannot checkmate' exception in 6.9 is at bi-encoder rank 3, but the cross-encoder prefers checkmate/winning chunks and pushes it to rank 5.",
+    "gold_chunk": 32,
+    "baseline_rank": 3,
+    "rerank_rank": 5,
+    "baseline_top3": [
+      "5.1.1",
+      "1.4.1",
+      "6.9"
+    ],
+    "rerank_top3": [
+      "1.4.1",
+      "5.1.1",
+      "A.5.3"
+    ],
+    "answer1": "The provided context does not answer this.",
+    "answer2": "The provided context does not answer this.",
+    "llm_s_1": 3.512716199999886,
+    "llm_s_2": 3.5676696000000447,
+    "table": [
+      {
+        "chunk": 3,
+        "clauses": "1.4.1, 1.4.2, 1.5",
+        "bi_rank": 2,
+        "cosine": 0.49,
+        "ce_rank": 1,
+        "ce_score": 0.55,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 22,
+        "clauses": "5.1.1, 5.1.2",
+        "bi_rank": 1,
+        "cosine": 0.519,
+        "ce_rank": 2,
+        "ce_score": -2.88,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 69,
+        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
+        "bi_rank": 8,
+        "cosine": 0.417,
+        "ce_rank": 3,
+        "ce_score": -3.16,
+        "shift": 5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 105,
+        "clauses": "III.5, III.5.1",
+        "bi_rank": 9,
+        "cosine": 0.403,
+        "ce_rank": 4,
+        "ce_score": -4.56,
+        "shift": 5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 32,
+        "clauses": "6.9, 6.10, 6.10.1",
+        "bi_rank": 3,
+        "cosine": 0.447,
+        "ce_rank": 5,
+        "ce_score": -4.57,
+        "shift": -2,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 23,
+        "clauses": "5.2.1, 5.2.2",
+        "bi_rank": 4,
+        "cosine": 0.422,
+        "ce_rank": 6,
+        "ce_score": -6.8,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 106,
+        "clauses": "III.5.2, III.5.3, III.6",
+        "bi_rank": 10,
+        "cosine": 0.392,
+        "ce_rank": 7,
+        "ce_score": -7.29,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 118,
+        "clauses": "Glossary",
+        "bi_rank": 6,
+        "cosine": 0.419,
+        "ce_rank": 8,
+        "ce_score": -7.96,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 31,
+        "clauses": "6.7.2, 6.8",
+        "bi_rank": 5,
+        "cosine": 0.419,
+        "ce_rank": 9,
+        "ce_score": -8.55,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 119,
+        "clauses": "Glossary",
+        "bi_rank": 7,
+        "cosine": 0.418,
+        "ce_rank": 10,
+        "ce_score": -8.79,
+        "shift": -3,
+        "GOLD": ""
+      }
+    ]
+  },
+  {
+    "category": "Counter-example: re-ranking hurts (negation)",
+    "query": "Is the arbiter allowed to tell players how many moves have been made?",
+    "gold": [
+      "12.6"
+    ],
+    "why": "12.6 ('shall not indicate the number of moves completed') is rank 2 for the bi-encoder; the cross-encoder rewards passages that literally talk about counting moves (7.3, 9.3) and drops it to rank 7.",
+    "gold_chunk": 62,
+    "baseline_rank": 2,
+    "rerank_rank": 7,
+    "baseline_top3": [
+      "11.9",
+      "12.4",
+      "A.4.1"
+    ],
+    "rerank_top3": [
+      "7.3",
+      "9.3.1",
+      "8.6"
+    ],
+    "answer1": "No, the arbiter shall refrain from informing a player that his/her opponent has completed a move. This is stated clearly in Article 12.6 of Passage 2.",
+    "answer2": "No, the arbiter is not explicitly allowed to tell players how many moves have been made according to the given context. The context does not provide information on the arbiter's role in informing players about the number of moves.",
+    "llm_s_1": 8.946051300000363,
+    "llm_s_2": 10.344799599999533,
+    "table": [
+      {
+        "chunk": 36,
+        "clauses": "7.3, 7.4, 7.4.1, 7.4.2, 7.4.3",
+        "bi_rank": 9,
+        "cosine": 0.551,
+        "ce_rank": 1,
+        "ce_score": 5.34,
+        "shift": 8,
+        "GOLD": ""
+      },
+      {
+        "chunk": 51,
+        "clauses": "9.3.1, 9.3.2, 9.4, 9.5",
+        "bi_rank": 10,
+        "cosine": 0.535,
+        "ce_rank": 2,
+        "ce_score": 5.31,
+        "shift": 8,
+        "GOLD": ""
+      },
+      {
+        "chunk": 46,
+        "clauses": "8.6, 8.7",
+        "bi_rank": 6,
+        "cosine": 0.59,
+        "ce_rank": 3,
+        "ce_score": 5.18,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 66,
+        "clauses": "A.4.1, A.4.2, A.4.3, A.5, A.5.1",
+        "bi_rank": 3,
+        "cosine": 0.642,
+        "ce_rank": 4,
+        "ce_score": 4.91,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 34,
+        "clauses": "6.11.4, 6.12.1, 6.12.2",
+        "bi_rank": 5,
+        "cosine": 0.591,
+        "ce_rank": 5,
+        "ce_score": 4.87,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 60,
+        "clauses": "11.9, 11.10, 11.11, 11.12",
+        "bi_rank": 1,
+        "cosine": 0.682,
+        "ce_rank": 6,
+        "ce_score": 3.39,
+        "shift": -5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 62,
+        "clauses": "12.4, 12.5, 12.6",
+        "bi_rank": 2,
+        "cosine": 0.647,
+        "ce_rank": 7,
+        "ce_score": 3.0,
+        "shift": -5,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 39,
+        "clauses": "7.5.5",
+        "bi_rank": 7,
+        "cosine": 0.575,
+        "ce_rank": 8,
+        "ce_score": 2.64,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 56,
+        "clauses": "11.2.4, 11.3, 11.3.1, 11.3.2",
+        "bi_rank": 8,
+        "cosine": 0.573,
+        "ce_rank": 9,
+        "ce_score": 1.15,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 70,
+        "clauses": "B.1, B.2, B.2.1, B.2.2, B.2.3",
+        "bi_rank": 4,
+        "cosine": 0.598,
+        "ce_rank": 10,
+        "ce_score": 0.19,
+        "shift": -6,
+        "GOLD": ""
+      }
+    ]
+  }
+]
