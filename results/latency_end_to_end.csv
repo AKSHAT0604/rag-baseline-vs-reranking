@@ -1,0 +1,3 @@
+model,Pipeline 1 end-to-end (s),Pipeline 2 end-to-end (s),re-ranking share of P2 time
+Qwen2.5-1.5B,3.894478754893415,3.9393411101146123,1.1%
+Qwen3.8-27B,1.382049134893419,1.4269114901146156,3.1%

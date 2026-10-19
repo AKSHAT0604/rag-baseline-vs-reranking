@@ -6,4 +6,5 @@ accelerate
 torch>=2.4
 numpy
 pandas
+requests
 ipykernel

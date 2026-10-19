@@ -1,9 +1,13 @@
-category,query,gold,gold_chunk,bi_rank,ce_rank,shift,in_top3_baseline,in_top3_rerank
-Keyword trap / distractor,Can a player use two hands to castle?,"4.1, 7.5.4",15,4,1,Chunk 15: #4 → #1,False,True
-Keyword trap / synonyms,Does a player have to keep writing down moves when very short of time?,8.4,44,7,1,Chunk 44: #7 → #1,False,True
-Exception / corner case,"In a rapid game, what happens if nobody notices an illegal move?",A.5.2,68,4,1,Chunk 68: #4 → #1,False,True
-Exception / penalty located elsewhere,What is the penalty for an incorrect draw claim in rapid chess?,A.3,65,6,2,Chunk 65: #6 → #2,False,True
-Negation & constraints,Is a game drawn automatically without any claim after a long series of moves with no captures?,9.6.2,53,4,1,Chunk 53: #4 → #1,False,True
-Other: vital chunk buried at rank 4-10,Is the time spent before pressing the clock counted against the player?,6.2.2,26,4,1,Chunk 26: #4 → #1,False,True
-Counter-example: re-ranking hurts,My opponent ran out of time but I only have a bare king left. Do I win?,6.9,32,3,5,Chunk 32: #3 → #5,True,False
-Counter-example: re-ranking hurts (negation),Is the arbiter allowed to tell players how many moves have been made?,12.6,62,2,7,Chunk 62: #2 → #7,True,False
+category,query,gold_chunk,bi_rank,ce_rank,shift,in_top3_baseline,in_top3_rerank,Qwen2.5-1.5B A1 correct,Qwen3.8-27B A1 correct,Qwen2.5-1.5B A2 correct,Qwen3.8-27B A2 correct
+Keyword trap / distractor,My CGPA is 7.5. Can I take an extra course in my 5th semester?,31,9,1,Chunk 31: #9 → #1,False,True,False,False,True,True
+Keyword trap / distractor,"After finishing 156 credits, for how many extra semesters can I stay to improve my CGPA?",61,7,1,Chunk 61: #7 → #1,False,True,False,False,True,True
+Keyword trap / synonyms,Can I take a gap semester to work on my startup?,69,4,2,Chunk 69: #4 → #2,False,True,False,False,True,True
+Keyword trap / synonyms,Can I spend a year studying at a foreign university?,55,6,2,Chunk 55: #6 → #2,False,True,False,False,True,True
+Exception / corner case,Does the six-year maximum duration include semester leaves?,80,6,1,Chunk 80: #6 → #1,False,True,False,False,True,True
+Exception / corner case,Does an online course count as an in-class course during my internship semester?,36,4,1,Chunk 36: #4 → #1,False,True,True,True,True,True
+Negation & constraints,How many semester leaves are allowed in the whole program?,70,4,1,Chunk 70: #4 → #1,False,True,False,False,True,True
+Negation & constraints,Is a student expelled from another institute on disciplinary grounds eligible for admission?,8,9,1,Chunk 8: #9 → #1,False,True,True,False,True,True
+Other: vital chunk buried at rank 4-10,When is a student's program terminated for poor academic performance?,67,6,3,Chunk 67: #6 → #3,False,True,False,False,True,True
+Counter-example: re-ranking hurts,Does a failing grade stay on my grade sheet after I clear the course?,48,2,4,Chunk 48: #2 → #4,True,False,False,True,False,False
+Counter-example: re-ranking hurts,How long can I stay enrolled before I run out of time to finish my degree?,80,3,4,Chunk 80: #3 → #4,True,False,False,True,False,False
+Limitation: neither pipeline finds it,How many credits do I need in total to get my degree?,57,6,7,Chunk 57: #6 → #7,False,False,False,False,False,False

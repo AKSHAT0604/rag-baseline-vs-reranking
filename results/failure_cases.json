@@ -1,1019 +1,1996 @@
 [
   {
     "category": "Keyword trap / distractor",
-    "query": "Can a player use two hands to castle?",
+    "query": "My CGPA is 7.5. Can I take an extra course in my 5th semester?",
     "gold": [
-      "4.1",
-      "7.5.4"
+      "overload only in one semester in the final year"
     ],
-    "why": "The word 'castle' pulls in the castling-procedure clauses (3.8.x, 4.4.x). The rule is in Art. 4.1 ('one hand only'), and the penalty is in 7.5.4, which never mentions castling as a topic.",
-    "gold_chunk": 15,
-    "baseline_rank": 4,
+    "expected": "No. An overload needs a CGPA of more than 8.0; a student without that may overload only in one semester of the final year (7th or 8th), so not in the 5th semester.",
+    "why": "'Extra course' and 'CGPA' match Sec 6.8 / 6.9 (extra credits beyond 156, extra courses to improve CGPA) and the Change History. The real rule is the OVERLOAD clause in Sec 5.8 (CGPA > 8.0, otherwise only in the final year), which never says 'extra course'.",
+    "gold_chunk": 31,
+    "baseline_rank": 9,
     "rerank_rank": 1,
     "baseline_top3": [
-      "4.4.2",
-      "4.3.2",
-      "3.8.2.1"
+      "6.9",
+      "6.8",
+      "CH"
     ],
     "rerank_top3": [
-      "7.5.2",
-      "II.2.3",
-      "4.4.2"
+      "5.8",
+      "6.8",
+      "6.9"
     ],
-    "answer1": "The provided context does not answer this.",
-    "answer2": "No, according to Article 7.5.4, if a player uses two hands to make a single move (such as in case of castling) and presses the clock, it shall be considered and penalised as if an illegal move.",
-    "llm_s_1": 3.5301949000004242,
-    "llm_s_2": 11.009550499999932,
     "table": [
       {
-        "chunk": 38,
-        "clauses": "7.5.2, 7.5.3, 7.5.4",
+        "chunk": 31,
+        "section": "5.8",
+        "starts with": "When a student registers for more credits than the stipulate",
         "bi_rank": 9,
-        "cosine": 0.324,
+        "cosine": 0.551,
         "ce_rank": 1,
-        "ce_score": -0.09,
+        "ce_score": 2.73,
         "shift": 8,
         "GOLD": "★"
       },
       {
-        "chunk": 98,
-        "clauses": "II.2.3, II.3, II.3.1",
-        "bi_rank": 5,
-        "cosine": 0.376,
-        "ce_rank": 2,
-        "ce_score": -0.18,
-        "shift": 3,
-        "GOLD": ""
-      },
-      {
-        "chunk": 17,
-        "clauses": "4.4.2, 4.4.3, 4.4.4",
-        "bi_rank": 1,
-        "cosine": 0.454,
-        "ce_rank": 3,
-        "ce_score": -0.56,
-        "shift": -2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 16,
-        "clauses": "4.3.2, 4.3.3, 4.4, 4.4.1",
+        "chunk": 60,
+        "section": "6.8",
+        "starts with": "• CGPA computation for Honors students at the end of 8th sem",
         "bi_rank": 2,
-        "cosine": 0.421,
-        "ce_rank": 4,
-        "ce_score": -3.54,
-        "shift": -2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 15,
-        "clauses": "4.1, 4.2, 4.2.1, 4.2.2, 4.3",
-        "bi_rank": 4,
-        "cosine": 0.417,
-        "ce_rank": 5,
-        "ce_score": -4.66,
-        "shift": -1,
-        "GOLD": "★"
-      },
-      {
-        "chunk": 99,
-        "clauses": "II.3.2, II.3.2.1, II.3.2.2, II.3.2.3, II.3.2.4",
-        "bi_rank": 6,
-        "cosine": 0.359,
-        "ce_rank": 6,
-        "ce_score": -4.87,
+        "cosine": 0.606,
+        "ce_rank": 2,
+        "ce_score": 2.47,
         "shift": 0,
         "GOLD": ""
       },
       {
-        "chunk": 102,
-        "clauses": "II.3.2.7",
-        "bi_rank": 10,
-        "cosine": 0.321,
-        "ce_rank": 7,
-        "ce_score": -6.06,
-        "shift": 3,
+        "chunk": 61,
+        "section": "6.9",
+        "starts with": "A B.Tech. student, who has already completed his/her graduat",
+        "bi_rank": 1,
+        "cosine": 0.619,
+        "ce_rank": 3,
+        "ce_score": 1.91,
+        "shift": -2,
         "GOLD": ""
       },
       {
-        "chunk": 12,
-        "clauses": "3.8.2.1, 3.8.2.2, 3.9",
+        "chunk": 58,
+        "section": "6.8",
+        "starts with": "Method: The below method will automatically decide which ext",
+        "bi_rank": 6,
+        "cosine": 0.594,
+        "ce_rank": 4,
+        "ce_score": 1.81,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 59,
+        "section": "6.8",
+        "starts with": "- CGPA will be computed based on the remaining credits. It i",
+        "bi_rank": 7,
+        "cosine": 0.565,
+        "ce_rank": 5,
+        "ce_score": 1.8,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 57,
+        "section": "6.8",
+        "starts with": "B.Tech. students are allowed to do “extra credits\" beyond 15",
+        "bi_rank": 5,
+        "cosine": 0.602,
+        "ce_rank": 6,
+        "ce_score": -1.7,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 51,
+        "section": "6.5",
+        "starts with": "(ii) UG students to repeat (Improvement) of a particular cou",
+        "bi_rank": 8,
+        "cosine": 0.555,
+        "ce_rank": 7,
+        "ce_score": -1.8,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 93,
+        "section": "CH",
+        "starts with": "(vi) Allowed to repeat a course completed with a pass grade\n",
         "bi_rank": 3,
-        "cosine": 0.418,
+        "cosine": 0.605,
         "ce_rank": 8,
-        "ce_score": -6.5,
+        "ce_score": -2.73,
         "shift": -5,
         "GOLD": ""
       },
       {
-        "chunk": 26,
-        "clauses": "6.2.1.2, 6.2.2, 6.2.3",
-        "bi_rank": 7,
-        "cosine": 0.349,
+        "chunk": 94,
+        "section": "CH",
+        "starts with": "Version 10 (July, 2019)\n(i) All operational guidelines are a",
+        "bi_rank": 4,
+        "cosine": 0.604,
         "ce_rank": 9,
-        "ce_score": -8.19,
-        "shift": -2,
+        "ce_score": -4.14,
+        "shift": -5,
         "GOLD": ""
       },
       {
-        "chunk": 84,
-        "clauses": "D.2.6.1, D.2.6.2",
-        "bi_rank": 8,
-        "cosine": 0.339,
+        "chunk": 92,
+        "section": "CH",
+        "starts with": "(ii) Registration of Online courses\n(iii) CGPA calculation\n(",
+        "bi_rank": 10,
+        "cosine": 0.543,
         "ce_rank": 10,
-        "ce_score": -8.75,
-        "shift": -2,
+        "ce_score": -4.54,
+        "shift": 0,
         "GOLD": ""
       }
-    ]
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "No, according to Section 6.9 of the regulations, a B.Tech. student who has already completed their graduation requirements cannot register for more than two extra courses to improve their CGPA. The maximum number of additional courses they can take is limited to those registered within one extra semester after completing 156 credits.",
+        "answer2": "No, according to the regulations provided, second-year students with a CGPA of more than 8.0 can take an overload of up to 2 additional credits over 20 credits. Since your CGPA is 7.5, which is below the threshold for taking an overload, you cannot take an extra course in your 5th semester.",
+        "s1": 4.994855745999303,
+        "s2": 5.39351729900045,
+        "tok1": 67,
+        "tok2": 73,
+        "ok1": false,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "According to Section 5.8, students with a CGPA of 7.5 are not eligible for overload in the 5th semester, as this option is restricted to the final year (7th or 8th semester) for those without a CGPA above 8.0. Therefore, you cannot take an extra course in your 5th semester.",
+        "s1": 0.8351661260003311,
+        "s2": 2.1778060860015103,
+        "tok1": 9,
+        "tok2": 76,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "Yes, students can typically take up to two additional courses per semester at IIIT Delhi.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "Yes, you can take an extra course in your 5th semester, as IIIT-Delhi typically allows students with a CGPA of 7.5 or higher to register for additional courses beyond the standard curriculum.",
+        "correct": false
+      }
+    }
   },
   {
-    "category": "Keyword trap / synonyms",
-    "query": "Does a player have to keep writing down moves when very short of time?",
+    "category": "Keyword trap / distractor",
+    "query": "After finishing 156 credits, for how many extra semesters can I stay to improve my CGPA?",
     "gold": [
-      "8.4"
+      "will be allowed in only one extra semester"
     ],
-    "why": "The query says 'writing down' and 'short of time'; Art. 8.4 says 'not obliged to meet the requirements of Article 8.1.1' and 'less than five minutes'. No shared vocabulary.",
-    "gold_chunk": 44,
+    "expected": "Only one extra semester (registering for at most two extra courses).",
+    "why": "'156 credits' and 'CGPA' are all over Sec 6.8 (the extra-credit CGPA method, four chunks). The answer ('only one extra semester') is in Sec 6.9.",
+    "gold_chunk": 61,
     "baseline_rank": 7,
     "rerank_rank": 1,
     "baseline_top3": [
-      "8.6",
-      "8.1.3",
-      "A.1"
+      "6.8",
+      "6.8",
+      "6.8"
     ],
     "rerank_top3": [
-      "8.4",
-      "I.1",
-      "A.1"
+      "6.9",
+      "6.8",
+      "6.8"
     ],
-    "answer1": "No, a player does not have to keep writing down moves when very short of time, as per Article 8.6 of the FIDE Laws of Chess, which states that if the scoresheets cannot be updated due to time constraints, the next move is considered the start of the next time period.",
-    "answer2": "Yes, according to Article 8.4 from Passage 1, if a player has less than five minutes left on their clock during an allotted period and does not have additional time added, they are not obliged to meet the requirements of recording moves.",
-    "llm_s_1": 13.151329700000133,
-    "llm_s_2": 11.466648999999961,
     "table": [
       {
-        "chunk": 44,
-        "clauses": "8.4, 8.5, 8.5.1",
+        "chunk": 61,
+        "section": "6.9",
+        "starts with": "A B.Tech. student, who has already completed his/her graduat",
         "bi_rank": 7,
-        "cosine": 0.496,
+        "cosine": 0.641,
         "ce_rank": 1,
-        "ce_score": 2.86,
+        "ce_score": 6.41,
         "shift": 6,
         "GOLD": "★"
       },
       {
-        "chunk": 89,
-        "clauses": "I.1, I.1.1",
-        "bi_rank": 9,
-        "cosine": 0.493,
+        "chunk": 60,
+        "section": "6.8",
+        "starts with": "• CGPA computation for Honors students at the end of 8th sem",
+        "bi_rank": 2,
+        "cosine": 0.704,
         "ce_rank": 2,
-        "ce_score": 2.18,
-        "shift": 7,
-        "GOLD": ""
-      },
-      {
-        "chunk": 65,
-        "clauses": "A.1, A.2, A.3, A.4",
-        "bi_rank": 3,
-        "cosine": 0.537,
-        "ce_rank": 3,
-        "ce_score": 0.78,
+        "ce_score": 1.95,
         "shift": 0,
         "GOLD": ""
       },
       {
-        "chunk": 104,
-        "clauses": "III.3.1.2, III.4",
-        "bi_rank": 8,
-        "cosine": 0.496,
-        "ce_rank": 4,
-        "ce_score": -1.33,
-        "shift": 4,
-        "GOLD": ""
-      },
-      {
-        "chunk": 46,
-        "clauses": "8.6, 8.7",
+        "chunk": 57,
+        "section": "6.8",
+        "starts with": "B.Tech. students are allowed to do “extra credits\" beyond 15",
         "bi_rank": 1,
-        "cosine": 0.589,
-        "ce_rank": 5,
-        "ce_score": -1.56,
-        "shift": -4,
-        "GOLD": ""
-      },
-      {
-        "chunk": 121,
-        "clauses": "Glossary",
-        "bi_rank": 4,
-        "cosine": 0.521,
-        "ce_rank": 6,
-        "ce_score": -2.73,
+        "cosine": 0.733,
+        "ce_rank": 3,
+        "ce_score": 1.88,
         "shift": -2,
         "GOLD": ""
       },
       {
-        "chunk": 45,
-        "clauses": "8.5.2, 8.5.3",
-        "bi_rank": 10,
-        "cosine": 0.49,
-        "ce_rank": 7,
-        "ce_score": -3.01,
-        "shift": 3,
-        "GOLD": ""
-      },
-      {
-        "chunk": 42,
-        "clauses": "8.1.3, 8.1.4, 8.1.5",
-        "bi_rank": 2,
-        "cosine": 0.538,
-        "ce_rank": 8,
-        "ce_score": -3.15,
-        "shift": -6,
-        "GOLD": ""
-      },
-      {
-        "chunk": 41,
-        "clauses": "8.1, 8.1.1, 8.1.1.1, 8.1.1.2, 8.1.2",
-        "bi_rank": 6,
-        "cosine": 0.496,
-        "ce_rank": 9,
-        "ce_score": -4.35,
-        "shift": -3,
-        "GOLD": ""
-      },
-      {
-        "chunk": 66,
-        "clauses": "A.4.1, A.4.2, A.4.3, A.5, A.5.1",
-        "bi_rank": 5,
-        "cosine": 0.502,
-        "ce_rank": 10,
-        "ce_score": -5.61,
-        "shift": -5,
-        "GOLD": ""
-      }
-    ]
-  },
-  {
-    "category": "Exception / corner case",
-    "query": "In a rapid game, what happens if nobody notices an illegal move?",
-    "gold": [
-      "A.5.2"
-    ],
-    "why": "The general illegal-move rule (7.5.x) dominates; the rapid-chess exception that lets the illegal move STAND lives in Appendix A.5.2.",
-    "gold_chunk": 68,
-    "baseline_rank": 4,
-    "rerank_rank": 1,
-    "baseline_top3": [
-      "7.5.1",
-      "7.5.5",
-      "A.5.3"
-    ],
-    "rerank_top3": [
-      "A.5.2",
-      "7.5.1",
-      "A.5.3"
-    ],
-    "answer1": "If nobody notices an illegal move in a rapid game, the position immediately before the irregularity shall be reinstated. If the position cannot be determined, the game shall continue from the last identifiable position prior to the irregularity.",
-    "answer2": "If nobody notices an illegal move and the opponent has not made their next move, the illegal move stands and the game continues. If the opponent makes their next move, the illegal move cannot be corrected unless both players agree without the arbiter's intervention.",
-    "llm_s_1": 10.14736559999983,
-    "llm_s_2": 11.141374200000428,
-    "table": [
-      {
-        "chunk": 68,
-        "clauses": "A.5.2",
-        "bi_rank": 4,
-        "cosine": 0.545,
-        "ce_rank": 1,
-        "ce_score": 4.09,
-        "shift": 3,
-        "GOLD": "★"
-      },
-      {
-        "chunk": 37,
-        "clauses": "7.5.1",
-        "bi_rank": 1,
-        "cosine": 0.645,
-        "ce_rank": 2,
-        "ce_score": 2.22,
+        "chunk": 58,
+        "section": "6.8",
+        "starts with": "Method: The below method will automatically decide which ext",
+        "bi_rank": 3,
+        "cosine": 0.701,
+        "ce_rank": 4,
+        "ce_score": 1.54,
         "shift": -1,
         "GOLD": ""
       },
       {
-        "chunk": 69,
-        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
-        "bi_rank": 3,
-        "cosine": 0.552,
-        "ce_rank": 3,
-        "ce_score": 1.92,
+        "chunk": 93,
+        "section": "CH",
+        "starts with": "(vi) Allowed to repeat a course completed with a pass grade\n",
+        "bi_rank": 5,
+        "cosine": 0.67,
+        "ce_rank": 5,
+        "ce_score": 1.21,
         "shift": 0,
         "GOLD": ""
       },
       {
-        "chunk": 39,
-        "clauses": "7.5.5",
-        "bi_rank": 2,
-        "cosine": 0.601,
-        "ce_rank": 4,
-        "ce_score": 0.39,
+        "chunk": 59,
+        "section": "6.8",
+        "starts with": "- CGPA will be computed based on the remaining credits. It i",
+        "bi_rank": 4,
+        "cosine": 0.673,
+        "ce_rank": 6,
+        "ce_score": 1.17,
         "shift": -2,
         "GOLD": ""
       },
       {
-        "chunk": 38,
-        "clauses": "7.5.2, 7.5.3, 7.5.4",
-        "bi_rank": 5,
-        "cosine": 0.525,
-        "ce_rank": 5,
-        "ce_score": 0.04,
+        "chunk": 31,
+        "section": "5.8",
+        "starts with": "When a student registers for more credits than the stipulate",
+        "bi_rank": 8,
+        "cosine": 0.61,
+        "ce_rank": 7,
+        "ce_score": 0.32,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 92,
+        "section": "CH",
+        "starts with": "(ii) Registration of Online courses\n(iii) CGPA calculation\n(",
+        "bi_rank": 9,
+        "cosine": 0.603,
+        "ce_rank": 8,
+        "ce_score": -3.66,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 94,
+        "section": "CH",
+        "starts with": "Version 10 (July, 2019)\n(i) All operational guidelines are a",
+        "bi_rank": 6,
+        "cosine": 0.647,
+        "ce_rank": 9,
+        "ce_score": -4.99,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 96,
+        "section": "CH",
+        "starts with": "(ii) Grade improvement in summer courses. Applicable from 20",
+        "bi_rank": 10,
+        "cosine": 0.564,
+        "ce_rank": 10,
+        "ce_score": -6.81,
+        "shift": 0,
+        "GOLD": ""
+      }
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "After finishing 156 credits, B.Tech. students are allowed to do \"extra credits\" beyond 156 credits required for completion of their program. For N extra credits done, the student will be allowed to remove the worst grades in N credits, with a maximum limit of at most 8 credits, to be not counted towards the CGPA computation. This decision will be reviewed after two batches have graduated with this option.",
+        "answer2": "After completing 156 credits, a B.Tech. student is allowed to register for at most two extra courses to improve their CGPA. This registration is permissible within one additional semester beyond the 156 credit mark.",
+        "s1": 6.505032576000303,
+        "s2": 3.705624643000192,
+        "tok1": 90,
+        "tok2": 48,
+        "ok1": false,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "According to Section 6.9, a student who has completed the graduation requirement of 156 credits is allowed to register for extra courses in only one extra semester.",
+        "s1": 0.7368351599998277,
+        "s2": 1.28331514599995,
+        "tok1": 9,
+        "tok2": 36,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "The duration of staying at IIIT Delhi after completing 156 credits is not specified in the given information.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "You can stay for up to 2 extra semesters (4 semesters total beyond the standard 8) to complete your degree and improve your CGPA, provided you have not already exceeded the maximum allowable duration of 12 semesters for the B.Tech program.",
+        "correct": false
+      }
+    }
+  },
+  {
+    "category": "Keyword trap / synonyms",
+    "query": "Can I take a gap semester to work on my startup?",
+    "gold": [
+      "entrepreneurship"
+    ],
+    "expected": "Yes, as a semester leave (entrepreneurship is an accepted reason), with permission before the last date of add/drop; at most four semester leaves in the program.",
+    "why": "The document says 'semester leave' and 'entrepreneurship', never 'gap semester' or 'startup'.",
+    "gold_chunk": 69,
+    "baseline_rank": 4,
+    "rerank_rank": 2,
+    "baseline_top3": [
+      "5.8",
+      "7.1",
+      "7.4"
+    ],
+    "rerank_top3": [
+      "5.8",
+      "7.4",
+      "7.4"
+    ],
+    "table": [
+      {
+        "chunk": 33,
+        "section": "5.8",
+        "starts with": "Students can avail underload below 12 credits (as low as 4 c",
+        "bi_rank": 1,
+        "cosine": 0.467,
+        "ce_rank": 1,
+        "ce_score": -8.61,
         "shift": 0,
         "GOLD": ""
       },
       {
-        "chunk": 65,
-        "clauses": "A.1, A.2, A.3, A.4",
-        "bi_rank": 7,
-        "cosine": 0.512,
-        "ce_rank": 6,
-        "ce_score": -1.94,
-        "shift": 1,
+        "chunk": 69,
+        "section": "7.4",
+        "starts with": "(2) A student may be allowed to take semester leave, with pe",
+        "bi_rank": 4,
+        "cosine": 0.421,
+        "ce_rank": 2,
+        "ce_score": -9.71,
+        "shift": 2,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 70,
+        "section": "7.4",
+        "starts with": "Any circumstance leading to more than four semester leave/dr",
+        "bi_rank": 3,
+        "cosine": 0.452,
+        "ce_rank": 3,
+        "ce_score": -10.52,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 20,
+        "section": "5",
+        "starts with": "(1) At the beginning of each semester, a student shall regis",
+        "bi_rank": 8,
+        "cosine": 0.381,
+        "ce_rank": 4,
+        "ce_score": -10.63,
+        "shift": 4,
         "GOLD": ""
       },
       {
         "chunk": 63,
-        "clauses": "12.7, 12.8, 12.9, 12.9.1, 12.9.2",
-        "bi_rank": 9,
-        "cosine": 0.5,
-        "ce_rank": 7,
-        "ce_score": -7.25,
-        "shift": 2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 21,
-        "clauses": "4.8, 4.9",
-        "bi_rank": 8,
-        "cosine": 0.501,
-        "ce_rank": 8,
-        "ce_score": -7.53,
-        "shift": 0,
-        "GOLD": ""
-      },
-      {
-        "chunk": 87,
-        "clauses": "D.2.10.1, D.2.10.2, D.2.10.3, D.2.10.4, D.2.10.5",
-        "bi_rank": 10,
-        "cosine": 0.495,
-        "ce_rank": 9,
-        "ce_score": -9.55,
-        "shift": 1,
-        "GOLD": ""
-      },
-      {
-        "chunk": 59,
-        "clauses": "11.5, 11.6, 11.7, 11.8",
-        "bi_rank": 6,
-        "cosine": 0.524,
-        "ce_rank": 10,
-        "ce_score": -9.9,
-        "shift": -4,
-        "GOLD": ""
-      }
-    ]
-  },
-  {
-    "category": "Exception / penalty located elsewhere",
-    "query": "What is the penalty for an incorrect draw claim in rapid chess?",
-    "gold": [
-      "A.3"
-    ],
-    "why": "Art. 9.5.3 says the opponent gets two minutes, but Appendix A.3 overrides it to ONE minute in rapid.",
-    "gold_chunk": 65,
-    "baseline_rank": 6,
-    "rerank_rank": 2,
-    "baseline_top3": [
-      "9.5.1",
-      "A.5.3",
-      "III.5"
-    ],
-    "rerank_top3": [
-      "9.5.1",
-      "A.1",
-      "A.5.3"
-    ],
-    "answer1": "According to Article 9.5.3 of Passage 1, if the claim of a draw is found to be incorrect, the arbiter shall add two minutes to the opponent's remaining thinking time. Therefore, the penalty for an incorrect draw claim in rapid chess is an addition of two minutes to the opponent's thinking time.",
-    "answer2": "The penalty for an incorrect draw claim in rapid chess is one minute added to the opponent's remaining thinking time.",
-    "llm_s_1": 14.693330699999933,
-    "llm_s_2": 6.464651700000104,
-    "table": [
-      {
-        "chunk": 52,
-        "clauses": "9.5.1, 9.5.2, 9.5.3, 9.6, 9.6.1",
-        "bi_rank": 1,
-        "cosine": 0.721,
-        "ce_rank": 1,
-        "ce_score": 2.57,
-        "shift": 0,
-        "GOLD": ""
-      },
-      {
-        "chunk": 65,
-        "clauses": "A.1, A.2, A.3, A.4",
-        "bi_rank": 6,
-        "cosine": 0.6,
-        "ce_rank": 2,
-        "ce_score": 1.94,
-        "shift": 4,
-        "GOLD": "★"
-      },
-      {
-        "chunk": 69,
-        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
+        "section": "7.1",
+        "starts with": "Rules for the first year (excluding the summer term schedule",
         "bi_rank": 2,
-        "cosine": 0.664,
-        "ce_rank": 3,
-        "ce_score": 1.86,
+        "cosine": 0.457,
+        "ce_rank": 5,
+        "ce_score": -10.77,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 80,
+        "section": "8.1",
+        "starts with": "The minimum duration for completing the B.Tech. program is 8",
+        "bi_rank": 5,
+        "cosine": 0.4,
+        "ce_rank": 6,
+        "ce_score": -11.03,
         "shift": -1,
         "GOLD": ""
       },
       {
-        "chunk": 68,
-        "clauses": "A.5.2",
-        "bi_rank": 9,
-        "cosine": 0.591,
-        "ce_rank": 4,
-        "ce_score": 0.51,
-        "shift": 5,
-        "GOLD": ""
-      },
-      {
-        "chunk": 59,
-        "clauses": "11.5, 11.6, 11.7, 11.8",
+        "chunk": 5,
+        "section": "2",
+        "starts with": "c) Summer Term. Starts around last week of May and ends arou",
         "bi_rank": 10,
-        "cosine": 0.581,
-        "ce_rank": 5,
-        "ce_score": 0.41,
-        "shift": 5,
-        "GOLD": ""
-      },
-      {
-        "chunk": 119,
-        "clauses": "Glossary",
-        "bi_rank": 8,
-        "cosine": 0.599,
-        "ce_rank": 6,
-        "ce_score": -0.51,
-        "shift": 2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 49,
-        "clauses": "9.1.2.3, 9.2, 9.2.1, 9.2.2",
-        "bi_rank": 4,
-        "cosine": 0.621,
+        "cosine": 0.375,
         "ce_rank": 7,
-        "ce_score": -0.55,
-        "shift": -3,
+        "ce_score": -11.07,
+        "shift": 3,
         "GOLD": ""
       },
       {
-        "chunk": 105,
-        "clauses": "III.5, III.5.1",
-        "bi_rank": 3,
-        "cosine": 0.646,
-        "ce_rank": 8,
-        "ce_score": -0.59,
-        "shift": -5,
-        "GOLD": ""
-      },
-      {
-        "chunk": 60,
-        "clauses": "11.9, 11.10, 11.11, 11.12",
-        "bi_rank": 5,
-        "cosine": 0.615,
-        "ce_rank": 9,
-        "ce_score": -3.03,
-        "shift": -4,
-        "GOLD": ""
-      },
-      {
-        "chunk": 51,
-        "clauses": "9.3.1, 9.3.2, 9.4, 9.5",
+        "chunk": 29,
+        "section": "5.7",
+        "starts with": "Registering in the summer term is optional. A student may re",
         "bi_rank": 7,
-        "cosine": 0.599,
-        "ce_rank": 10,
-        "ce_score": -3.29,
+        "cosine": 0.398,
+        "ce_rank": 8,
+        "ce_score": -11.16,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 4,
+        "section": "2",
+        "starts with": "There are two regular semesters and one summer term in a yea",
+        "bi_rank": 6,
+        "cosine": 0.398,
+        "ce_rank": 9,
+        "ce_score": -11.19,
         "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 30,
+        "section": "5.8",
+        "starts with": "In general, students will take courses as per the program. N",
+        "bi_rank": 9,
+        "cosine": 0.38,
+        "ce_rank": 10,
+        "ce_score": -11.27,
+        "shift": -1,
         "GOLD": ""
       }
-    ]
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "No, according to Section 5.8 of the regulations, students cannot take a gap semester to work on a startup unless it is approved by satisfying the eligibility criteria for internships mentioned there.",
+        "answer2": "Yes, students can take a semester leave for internships or entrepreneurship purposes, provided they meet the eligibility criteria specified in Section 7.4 of the regulations. However, they cannot take more than four semester leaves in total across the duration of their program.",
+        "s1": 3.048476103000212,
+        "s2": 3.8564101310003025,
+        "tok1": 40,
+        "tok2": 52,
+        "ok1": false,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "Yes, you may take a semester leave for entrepreneurship, provided you obtain permission from the AAC before the last date of add/drop [Section 7.4]. However, you are limited to a maximum of four semester leaves in the entire program, and any circumstance leading to more than four leaves may result in automatic termination of the program [Section 7.4].",
+        "s1": 0.740309865999734,
+        "s2": 1.93621635800082,
+        "tok1": 9,
+        "tok2": 75,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "Yes, students can typically take up to two semesters (6 months) of study leave for internships or entrepreneurship projects like startups.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "No, you cannot take a gap semester to work on a startup; IIIT-Delhi's B.Tech regulations do not allow students to drop out or take a leave of absence for such purposes. If you leave the program, you are considered to have withdrawn, and you would need to reapply for admission as a new student if you wish to return later.",
+        "correct": false
+      }
+    }
   },
   {
-    "category": "Negation & constraints",
-    "query": "Is a game drawn automatically without any claim after a long series of moves with no captures?",
+    "category": "Keyword trap / synonyms",
+    "query": "Can I spend a year studying at a foreign university?",
     "gold": [
-      "9.6.2"
+      "spend up to 2 semesters at another University"
     ],
-    "why": "'without any claim' is a negation. The bi-encoder favours chunks about claims (50-move CLAIM, 9.3), while the automatic 75-move rule is 9.6.2.",
-    "gold_chunk": 53,
-    "baseline_rank": 4,
-    "rerank_rank": 1,
+    "expected": "Yes, a student may spend up to 2 semesters at another university (credit transfer capped at 40 credits, 20 per semester).",
+    "why": "'Foreign' pulls in the admissions paragraph on 'Foreign Students' (Sec 3). The rule is Sec 6.7: 'places of repute outside IIIT-Delhi … up to 2 semesters at another University'.",
+    "gold_chunk": 55,
+    "baseline_rank": 6,
+    "rerank_rank": 2,
     "baseline_top3": [
-      "9.1.2.3",
-      "9.5.1",
-      "9.3.1"
+      "3",
+      "7.1",
+      "2"
     ],
     "rerank_top3": [
-      "9.6.2",
-      "9.3.1",
-      "III.5"
+      "3",
+      "6.7",
+      "5.8"
     ],
-    "answer1": "Yes, according to Article 9.6.1, if the same position appears at least five times due to a series of moves with no pawn moves or captures, the game is automatically drawn.",
-    "answer2": "Yes, if a series of at least 75 moves have been made by each player without the movement of any pawn and without any capture, the game is automatically drawn according to Article 9.6.2.",
-    "llm_s_1": 9.6090578000003,
-    "llm_s_2": 9.872726800000237,
     "table": [
       {
-        "chunk": 53,
-        "clauses": "9.6.2",
-        "bi_rank": 4,
-        "cosine": 0.61,
-        "ce_rank": 1,
-        "ce_score": 5.36,
-        "shift": 3,
-        "GOLD": "★"
-      },
-      {
-        "chunk": 51,
-        "clauses": "9.3.1, 9.3.2, 9.4, 9.5",
-        "bi_rank": 3,
-        "cosine": 0.622,
-        "ce_rank": 2,
-        "ce_score": 4.97,
-        "shift": 1,
-        "GOLD": ""
-      },
-      {
-        "chunk": 105,
-        "clauses": "III.5, III.5.1",
-        "bi_rank": 5,
-        "cosine": 0.595,
-        "ce_rank": 3,
-        "ce_score": 3.52,
-        "shift": 2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 69,
-        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
-        "bi_rank": 8,
-        "cosine": 0.559,
-        "ce_rank": 4,
-        "ce_score": 3.23,
-        "shift": 4,
-        "GOLD": ""
-      },
-      {
-        "chunk": 52,
-        "clauses": "9.5.1, 9.5.2, 9.5.3, 9.6, 9.6.1",
-        "bi_rank": 2,
-        "cosine": 0.628,
-        "ce_rank": 5,
-        "ce_score": 3.12,
-        "shift": -3,
-        "GOLD": ""
-      },
-      {
-        "chunk": 49,
-        "clauses": "9.1.2.3, 9.2, 9.2.1, 9.2.2",
+        "chunk": 12,
+        "section": "3",
+        "starts with": "Foreign Students Some seats may be reserved for foreign stud",
         "bi_rank": 1,
-        "cosine": 0.633,
-        "ce_rank": 6,
-        "ce_score": 3.04,
-        "shift": -5,
-        "GOLD": ""
-      },
-      {
-        "chunk": 107,
-        "clauses": "III.6.1, III.6.1.1, III.6.1.2, III.6.1.1, III.6.2",
-        "bi_rank": 7,
-        "cosine": 0.56,
-        "ce_rank": 7,
-        "ce_score": 2.06,
+        "cosine": 0.407,
+        "ce_rank": 1,
+        "ce_score": -3.32,
         "shift": 0,
         "GOLD": ""
       },
       {
-        "chunk": 104,
-        "clauses": "III.3.1.2, III.4",
+        "chunk": 55,
+        "section": "6.7",
+        "starts with": "Students may be permitted to do academic work and courses in",
         "bi_rank": 6,
-        "cosine": 0.565,
+        "cosine": 0.333,
+        "ce_rank": 2,
+        "ce_score": -4.77,
+        "shift": 4,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 33,
+        "section": "5.8",
+        "starts with": "Students can avail underload below 12 credits (as low as 4 c",
+        "bi_rank": 9,
+        "cosine": 0.323,
+        "ce_rank": 3,
+        "ce_score": -10.52,
+        "shift": 6,
+        "GOLD": ""
+      },
+      {
+        "chunk": 30,
+        "section": "5.8",
+        "starts with": "In general, students will take courses as per the program. N",
+        "bi_rank": 4,
+        "cosine": 0.344,
+        "ce_rank": 4,
+        "ce_score": -10.52,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 63,
+        "section": "7.1",
+        "starts with": "Rules for the first year (excluding the summer term schedule",
+        "bi_rank": 5,
+        "cosine": 0.339,
+        "ce_rank": 5,
+        "ce_score": -10.73,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 15,
+        "section": "4",
+        "starts with": "b) A 2-credit course. The course will have 1.5 hours of lect",
+        "bi_rank": 8,
+        "cosine": 0.328,
+        "ce_rank": 6,
+        "ce_score": -10.9,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 64,
+        "section": "7.1",
+        "starts with": "(iii) A student repeating the first year may be allowed tran",
+        "bi_rank": 2,
+        "cosine": 0.383,
+        "ce_rank": 7,
+        "ce_score": -10.91,
+        "shift": -5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 69,
+        "section": "7.4",
+        "starts with": "(2) A student may be allowed to take semester leave, with pe",
+        "bi_rank": 7,
+        "cosine": 0.329,
         "ce_rank": 8,
-        "ce_score": 1.72,
+        "ce_score": -10.93,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 71,
+        "section": "7.4",
+        "starts with": "(3) If a student is absent from the Institute for more than ",
+        "bi_rank": 10,
+        "cosine": 0.321,
+        "ce_rank": 9,
+        "ce_score": -10.94,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 4,
+        "section": "2",
+        "starts with": "There are two regular semesters and one summer term in a yea",
+        "bi_rank": 3,
+        "cosine": 0.346,
+        "ce_rank": 10,
+        "ce_score": -10.98,
+        "shift": -7,
+        "GOLD": ""
+      }
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "Yes, some seats may be reserved for foreign students who apply through separate processes as described in each year's prospectus. However, the specific details regarding how many seats are available or what criteria they must meet are not provided in the given context.",
+        "answer2": "Yes, students may be permitted to do academic work and courses in places of repute outside IIIT-Delhi and may be allowed to spend up to 2 semesters at another University.",
+        "s1": 3.5475432990006084,
+        "s2": 2.9714386069990724,
+        "tok1": 50,
+        "tok2": 40,
+        "ok1": false,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "Yes, you may be allowed to spend up to 2 semesters at another university, which corresponds to one academic year [Section 6.7]. However, the maximum credit transfer allowed is 40 credits over the entire B.Tech. program, with a limit of 20 credits in a single semester [Section 6.7].",
+        "s1": 0.6977063270005601,
+        "s2": 1.8895138109983236,
+        "tok1": 9,
+        "tok2": 72,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "Yes, it is possible to study for one academic year abroad with proper planning and funding arrangements. Many students choose to do so as part of their education or career goals. However, this decision should be carefully considered due to the time commitment required and the potential impact on future studies or job prospects.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "Yes, IIIT-Delhi offers a Semester Abroad program that allows students to spend one semester (typically 4-5 months) at a partner foreign university, rather than a full year.",
+        "correct": false
+      }
+    }
+  },
+  {
+    "category": "Exception / corner case",
+    "query": "Does the six-year maximum duration include semester leaves?",
+    "gold": [
+      "including the semester in which student took semester leave"
+    ],
+    "expected": "Yes. The six-year (12-semester) maximum includes semesters taken as leave (unlike the 8-semester minimum, which excludes them).",
+    "why": "Sec 8.1 has the twist: the 8-semester MINIMUM excludes leave semesters, but the six-year MAXIMUM includes them. The bi-encoder returns generic leave chunks (Sec 7.4) and the semester calendar.",
+    "gold_chunk": 80,
+    "baseline_rank": 6,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "2",
+      "7.1",
+      "7.4"
+    ],
+    "rerank_top3": [
+      "8.1",
+      "7.4",
+      "2"
+    ],
+    "table": [
+      {
+        "chunk": 80,
+        "section": "8.1",
+        "starts with": "The minimum duration for completing the B.Tech. program is 8",
+        "bi_rank": 6,
+        "cosine": 0.549,
+        "ce_rank": 1,
+        "ce_score": 2.65,
+        "shift": 5,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 69,
+        "section": "7.4",
+        "starts with": "(2) A student may be allowed to take semester leave, with pe",
+        "bi_rank": 3,
+        "cosine": 0.609,
+        "ce_rank": 2,
+        "ce_score": -1.24,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 5,
+        "section": "2",
+        "starts with": "c) Summer Term. Starts around last week of May and ends arou",
+        "bi_rank": 1,
+        "cosine": 0.645,
+        "ce_rank": 3,
+        "ce_score": -2.28,
         "shift": -2,
         "GOLD": ""
       },
       {
-        "chunk": 60,
-        "clauses": "11.9, 11.10, 11.11, 11.12",
-        "bi_rank": 9,
-        "cosine": 0.551,
-        "ce_rank": 9,
-        "ce_score": -2.54,
-        "shift": 0,
-        "GOLD": ""
-      },
-      {
-        "chunk": 46,
-        "clauses": "8.6, 8.7",
-        "bi_rank": 10,
-        "cosine": 0.533,
-        "ce_rank": 10,
-        "ce_score": -4.93,
-        "shift": 0,
-        "GOLD": ""
-      }
-    ]
-  },
-  {
-    "category": "Other: vital chunk buried at rank 4-10",
-    "query": "Is the time spent before pressing the clock counted against the player?",
-    "gold": [
-      "6.2.2"
-    ],
-    "why": "Generic clock vocabulary is spread across Article 6; the specific sentence is in 6.2.2.",
-    "gold_chunk": 26,
-    "baseline_rank": 4,
-    "rerank_rank": 1,
-    "baseline_top3": [
-      "6.3.2",
-      "8.4",
-      "III.3.1.2"
-    ],
-    "rerank_top3": [
-      "6.2.1.2",
-      "6.3.2",
-      "6.2.4"
-    ],
-    "answer1": "No, the time spent before pressing the clock is not counted against the player; it is added to the main thinking time.",
-    "answer2": "The time spent before pressing the clock is considered part of the time allotted to the player.",
-    "llm_s_1": 6.687825400000293,
-    "llm_s_2": 5.319541099999697,
-    "table": [
-      {
-        "chunk": 26,
-        "clauses": "6.2.1.2, 6.2.2, 6.2.3",
+        "chunk": 70,
+        "section": "7.4",
+        "starts with": "Any circumstance leading to more than four semester leave/dr",
         "bi_rank": 4,
-        "cosine": 0.584,
-        "ce_rank": 1,
-        "ce_score": 2.13,
-        "shift": 3,
-        "GOLD": "★"
-      },
-      {
-        "chunk": 29,
-        "clauses": "6.3.2, 6.4",
-        "bi_rank": 1,
-        "cosine": 0.62,
-        "ce_rank": 2,
-        "ce_score": 1.45,
-        "shift": -1,
-        "GOLD": ""
-      },
-      {
-        "chunk": 27,
-        "clauses": "6.2.4, 6.2.5, 6.2.6, 6.3",
-        "bi_rank": 5,
-        "cosine": 0.562,
-        "ce_rank": 3,
-        "ce_score": 0.66,
-        "shift": 2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 111,
-        "clauses": "Glossary",
-        "bi_rank": 8,
-        "cosine": 0.548,
+        "cosine": 0.603,
         "ce_rank": 4,
-        "ce_score": 0.3,
-        "shift": 4,
+        "ce_score": -2.75,
+        "shift": 0,
         "GOLD": ""
       },
       {
-        "chunk": 44,
-        "clauses": "8.4, 8.5, 8.5.1",
+        "chunk": 63,
+        "section": "7.1",
+        "starts with": "Rules for the first year (excluding the summer term schedule",
         "bi_rank": 2,
-        "cosine": 0.607,
+        "cosine": 0.614,
         "ce_rank": 5,
-        "ce_score": -1.41,
+        "ce_score": -4.61,
         "shift": -3,
         "GOLD": ""
       },
       {
-        "chunk": 25,
-        "clauses": "6.1, 6.2, 6.2.1, 6.2.1.1",
-        "bi_rank": 7,
-        "cosine": 0.558,
+        "chunk": 33,
+        "section": "5.8",
+        "starts with": "Students can avail underload below 12 credits (as low as 4 c",
+        "bi_rank": 9,
+        "cosine": 0.512,
         "ce_rank": 6,
-        "ce_score": -2.48,
+        "ce_score": -6.52,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 4,
+        "section": "2",
+        "starts with": "There are two regular semesters and one summer term in a yea",
+        "bi_rank": 5,
+        "cosine": 0.581,
+        "ce_rank": 7,
+        "ce_score": -6.82,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 26,
+        "section": "5.4",
+        "starts with": "A student can change the courses that he/she does in a semes",
+        "bi_rank": 10,
+        "cosine": 0.509,
+        "ce_rank": 8,
+        "ce_score": -7.5,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 85,
+        "section": "8.5",
+        "starts with": "June 21 for the students who finish their requirements durin",
+        "bi_rank": 8,
+        "cosine": 0.518,
+        "ce_rank": 9,
+        "ce_score": -10.74,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 30,
+        "section": "5.8",
+        "starts with": "In general, students will take courses as per the program. N",
+        "bi_rank": 7,
+        "cosine": 0.529,
+        "ce_rank": 10,
+        "ce_score": -10.93,
+        "shift": -3,
+        "GOLD": ""
+      }
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "No, the six-year maximum duration includes semester leaves. According to Section 7.4 of the regulations, \"A student shall not be permitted more than four semester leaves in the entire program.\" This means that while there is a limit on the number of semester leaves, it does not affect the total duration of the program, which is typically six years.",
+        "answer2": "Yes, the six-year maximum duration includes semester leaves. According to Section 8.1 of the regulations, \"the maximum duration within which the requirements must be completed is six years (12 semesters)\" and \"a student may be allowed to take semester leave, with permission before the last date of add/drop, for any valid reason.\"",
+        "s1": 5.314367936000053,
+        "s2": 5.240473687999838,
+        "tok1": 72,
+        "tok2": 71,
+        "ok1": false,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "Yes, the six-year maximum duration includes the semesters in which a student took semester leave. According to Section 8.1, the maximum duration of six years (12 semesters) is defined as including the semester in which the student took semester leave or the repeated semester/year.",
+        "s1": 0.6858418230003736,
+        "s2": 1.7617864820003888,
+        "tok1": 9,
+        "tok2": 59,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "Yes, the six-year maximum duration for a Bachelor of Technology (B.Tech) program at IIIT-Delhi includes semester breaks or leaves. Students are allowed to take up to two semesters off during their studies without affecting their graduation timeline.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "No, the six-year maximum duration does not include semester leaves; the maximum period is extended by the number of semesters for which a leave of absence is granted, provided the total duration does not exceed eight years.",
+        "correct": false
+      }
+    }
+  },
+  {
+    "category": "Exception / corner case",
+    "query": "Does an online course count as an in-class course during my internship semester?",
+    "gold": [
+      "register for 4 credits of only IP/IS/UR/BTP/OC courses"
+    ],
+    "expected": "No. During the internship semester the student registers for 4 credits of only IP/IS/UR/BTP/OC courses and may not take any in-class course, so an online course is allowed and is not treated as an in-class course.",
+    "why": "General online-course rules (Sec 4) dominate. The internship exception (Sec 5.8) says interns may register ONLY for 4 credits of IP/IS/UR/BTP/OC and no in-class course.",
+    "gold_chunk": 36,
+    "baseline_rank": 4,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "4",
+      "4",
+      "5.8"
+    ],
+    "rerank_top3": [
+      "5.8",
+      "5.8",
+      "4"
+    ],
+    "table": [
+      {
+        "chunk": 36,
+        "section": "5.8",
+        "starts with": "Students willing to go for internship need to take necessary",
+        "bi_rank": 4,
+        "cosine": 0.512,
+        "ce_rank": 1,
+        "ce_score": 3.19,
+        "shift": 3,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 34,
+        "section": "5.8",
+        "starts with": "(4) Must have been left with 4 credits of IP/IS/UR/Online co",
+        "bi_rank": 3,
+        "cosine": 0.533,
+        "ce_rank": 2,
+        "ce_score": 1.47,
         "shift": 1,
         "GOLD": ""
       },
       {
-        "chunk": 104,
-        "clauses": "III.3.1.2, III.4",
-        "bi_rank": 3,
-        "cosine": 0.593,
-        "ce_rank": 7,
-        "ce_score": -2.76,
-        "shift": -4,
+        "chunk": 18,
+        "section": "4",
+        "starts with": "1. A B.Tech. student is allowed to register for online cours",
+        "bi_rank": 1,
+        "cosine": 0.57,
+        "ce_rank": 3,
+        "ce_score": -0.1,
+        "shift": -2,
         "GOLD": ""
       },
       {
-        "chunk": 121,
-        "clauses": "Glossary",
+        "chunk": 46,
+        "section": "6.3",
+        "starts with": "(4) In certain courses, such as Online Courses (OC, Self-Gro",
+        "bi_rank": 7,
+        "cosine": 0.453,
+        "ce_rank": 4,
+        "ce_score": -1.68,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 33,
+        "section": "5.8",
+        "starts with": "Students can avail underload below 12 credits (as low as 4 c",
+        "bi_rank": 6,
+        "cosine": 0.482,
+        "ce_rank": 5,
+        "ce_score": -2.58,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 70,
+        "section": "7.4",
+        "starts with": "Any circumstance leading to more than four semester leave/dr",
+        "bi_rank": 10,
+        "cosine": 0.434,
+        "ce_rank": 6,
+        "ce_score": -4.41,
+        "shift": 4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 17,
+        "section": "4",
+        "starts with": "(3) While taking courses in the Institute is the primary mea",
+        "bi_rank": 2,
+        "cosine": 0.565,
+        "ce_rank": 7,
+        "ce_score": -6.21,
+        "shift": -5,
+        "GOLD": ""
+      },
+      {
+        "chunk": 92,
+        "section": "CH",
+        "starts with": "(ii) Registration of Online courses\n(iii) CGPA calculation\n(",
         "bi_rank": 9,
-        "cosine": 0.547,
+        "cosine": 0.435,
         "ce_rank": 8,
         "ce_score": -6.43,
         "shift": 1,
         "GOLD": ""
       },
       {
-        "chunk": 84,
-        "clauses": "D.2.6.1, D.2.6.2",
-        "bi_rank": 6,
-        "cosine": 0.559,
+        "chunk": 14,
+        "section": "4",
+        "starts with": "(1) Every semester the Institute offers some courses, taught",
+        "bi_rank": 5,
+        "cosine": 0.497,
         "ce_rank": 9,
-        "ce_score": -6.78,
+        "ce_score": -6.74,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 16,
+        "section": "4",
+        "starts with": "c) A 1-credit course. The course is likely to be run as a sh",
+        "bi_rank": 8,
+        "cosine": 0.445,
+        "ce_rank": 10,
+        "ce_score": -8.12,
+        "shift": -2,
+        "GOLD": ""
+      }
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "No, an online course does not count as an in-class course during your internship semester according to the given information.",
+        "answer2": "No, an online course does not count as an in-class course during your internship semester according to Section 5.8 of the regulations.",
+        "s1": 2.0907399999996414,
+        "s2": 2.3980131759999495,
+        "tok1": 24,
+        "tok2": 29,
+        "ok1": true,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "According to Section 5.8(4), a student must have been left with 4 credits of IP/IS/UR/Online courses/BTP to be eligible for internship interviews. This indicates that online courses are treated as a specific category of credit load that must be completed or carried over, rather than being counted as standard in-class courses during the internship semester.",
+        "answer2": "According to Section 5.8, students approved for an internship are required to register for 4 credits of only IP/IS/UR/BTP/OC courses in the eighth semester. The regulation explicitly states that students will not be allowed to do any in-class course during the internship period, implying that Online Courses (OC) are permitted and do not count as in-class courses for this restriction.\n\n[Section 5.8: Academic Load]",
+        "s1": 1.9191057449988875,
+        "s2": 2.4266623069997877,
+        "tok1": 75,
+        "tok2": 92,
+        "ok1": true,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "No, an online course does not count as an in-class course for internships. Internship credits are typically earned through on-site work experience under direct supervision of a mentor or supervisor. Online courses do not fulfill this requirement and cannot be used to satisfy internship requirements.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "No, online courses generally do not count as in-class courses for internship eligibility at IIIT-Delhi, as internships typically require you to be enrolled in a minimum number of credit hours (usually 6-9 credits) of regular, in-person coursework to maintain full-time student status.",
+        "correct": false
+      }
+    }
+  },
+  {
+    "category": "Negation & constraints",
+    "query": "How many semester leaves are allowed in the whole program?",
+    "gold": [
+      "more than four semester leave"
+    ],
+    "expected": "At most four semester leaves in the entire program; more may lead to automatic termination.",
+    "why": "The limit is phrased as a prohibition: 'shall not be permitted more than four semester leaves' / 'more than four … may result in automatic termination'.",
+    "gold_chunk": 70,
+    "baseline_rank": 4,
+    "rerank_rank": 1,
+    "baseline_top3": [
+      "5.8",
+      "7.1",
+      "2"
+    ],
+    "rerank_top3": [
+      "7.4",
+      "7.4",
+      "8.1"
+    ],
+    "table": [
+      {
+        "chunk": 69,
+        "section": "7.4",
+        "starts with": "(2) A student may be allowed to take semester leave, with pe",
+        "bi_rank": 7,
+        "cosine": 0.621,
+        "ce_rank": 1,
+        "ce_score": 6.25,
+        "shift": 6,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 70,
+        "section": "7.4",
+        "starts with": "Any circumstance leading to more than four semester leave/dr",
+        "bi_rank": 4,
+        "cosine": 0.644,
+        "ce_rank": 2,
+        "ce_score": 2.29,
+        "shift": 2,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 80,
+        "section": "8.1",
+        "starts with": "The minimum duration for completing the B.Tech. program is 8",
+        "bi_rank": 10,
+        "cosine": 0.582,
+        "ce_rank": 3,
+        "ce_score": -0.44,
+        "shift": 7,
+        "GOLD": ""
+      },
+      {
+        "chunk": 33,
+        "section": "5.8",
+        "starts with": "Students can avail underload below 12 credits (as low as 4 c",
+        "bi_rank": 8,
+        "cosine": 0.602,
+        "ce_rank": 4,
+        "ce_score": -2.15,
+        "shift": 4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 63,
+        "section": "7.1",
+        "starts with": "Rules for the first year (excluding the summer term schedule",
+        "bi_rank": 2,
+        "cosine": 0.671,
+        "ce_rank": 5,
+        "ce_score": -4.24,
         "shift": -3,
         "GOLD": ""
       },
       {
-        "chunk": 46,
-        "clauses": "8.6, 8.7",
-        "bi_rank": 10,
-        "cosine": 0.542,
-        "ce_rank": 10,
-        "ce_score": -7.73,
+        "chunk": 4,
+        "section": "2",
+        "starts with": "There are two regular semesters and one summer term in a yea",
+        "bi_rank": 6,
+        "cosine": 0.628,
+        "ce_rank": 6,
+        "ce_score": -5.3,
         "shift": 0,
         "GOLD": ""
+      },
+      {
+        "chunk": 5,
+        "section": "2",
+        "starts with": "c) Summer Term. Starts around last week of May and ends arou",
+        "bi_rank": 3,
+        "cosine": 0.662,
+        "ce_rank": 7,
+        "ce_score": -6.13,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 30,
+        "section": "5.8",
+        "starts with": "In general, students will take courses as per the program. N",
+        "bi_rank": 1,
+        "cosine": 0.692,
+        "ce_rank": 8,
+        "ce_score": -6.53,
+        "shift": -7,
+        "GOLD": ""
+      },
+      {
+        "chunk": 94,
+        "section": "CH",
+        "starts with": "Version 10 (July, 2019)\n(i) All operational guidelines are a",
+        "bi_rank": 5,
+        "cosine": 0.641,
+        "ce_rank": 9,
+        "ce_score": -6.7,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 29,
+        "section": "5.7",
+        "starts with": "Registering in the summer term is optional. A student may re",
+        "bi_rank": 9,
+        "cosine": 0.595,
+        "ce_rank": 10,
+        "ce_score": -7.62,
+        "shift": -1,
+        "GOLD": ""
       }
-    ]
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "According to Section 7.4 of the regulations, a student may be allowed up to four semester leaves in the entire program.",
+        "s1": 1.0315716709992557,
+        "s2": 2.202843520000897,
+        "tok1": 9,
+        "tok2": 27,
+        "ok1": false,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "According to Section 7.4, a student shall not be permitted more than four semester leaves in the entire program.",
+        "s1": 0.6374553099994955,
+        "s2": 1.0962559489998966,
+        "tok1": 9,
+        "tok2": 25,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "The entire duration of a Bachelor of Technology (B.Tech) program at IIIT Delhi is divided into four semesters, each lasting for approximately 15 weeks. Therefore, students can take up to four semester breaks during their academic journey.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "IIIT-Delhi allows a maximum of **2** semester leaves (also known as breaks) during the entire B.Tech program.",
+        "correct": false
+      }
+    }
   },
   {
-    "category": "Counter-example: re-ranking hurts",
-    "query": "My opponent ran out of time but I only have a bare king left. Do I win?",
+    "category": "Negation & constraints",
+    "query": "Is a student expelled from another institute on disciplinary grounds eligible for admission?",
     "gold": [
-      "6.9"
+      "on disciplinary grounds are not eligible"
     ],
-    "why": "The 'however, drawn if the opponent cannot checkmate' exception in 6.9 is at bi-encoder rank 3, but the cross-encoder prefers checkmate/winning chunks and pushes it to rank 5.",
-    "gold_chunk": 32,
-    "baseline_rank": 3,
-    "rerank_rank": 5,
+    "expected": "No, a candidate whose program was terminated elsewhere on disciplinary grounds is not eligible for admission.",
+    "why": "'Disciplinary' pulls Sec 9 (Disciplinary Action) to rank 1. The answer is a negated eligibility rule inside Sec 3 Admission.",
+    "gold_chunk": 8,
+    "baseline_rank": 9,
+    "rerank_rank": 1,
     "baseline_top3": [
-      "5.1.1",
-      "1.4.1",
-      "6.9"
+      "9",
+      "7.2",
+      "3"
     ],
     "rerank_top3": [
-      "1.4.1",
-      "5.1.1",
-      "A.5.3"
+      "3",
+      "9",
+      "7.2"
     ],
-    "answer1": "The provided context does not answer this.",
-    "answer2": "The provided context does not answer this.",
-    "llm_s_1": 3.512716199999886,
-    "llm_s_2": 3.5676696000000447,
     "table": [
       {
-        "chunk": 3,
-        "clauses": "1.4.1, 1.4.2, 1.5",
-        "bi_rank": 2,
-        "cosine": 0.49,
+        "chunk": 8,
+        "section": "3",
+        "starts with": "Relaxation is given for category students, as specified in t",
+        "bi_rank": 9,
+        "cosine": 0.476,
         "ce_rank": 1,
-        "ce_score": 0.55,
+        "ce_score": 7.01,
+        "shift": 8,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 88,
+        "section": "9",
+        "starts with": "IIIT-Delhi maintains global academic standards in its own ed",
+        "bi_rank": 1,
+        "cosine": 0.549,
+        "ce_rank": 2,
+        "ce_score": 2.81,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 65,
+        "section": "7.2",
+        "starts with": "A student shall be placed under academic warning/probation “",
+        "bi_rank": 2,
+        "cosine": 0.537,
+        "ce_rank": 3,
+        "ce_score": 1.81,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 66,
+        "section": "7.2",
+        "starts with": "(2) The student will not be allowed to participate in any ev",
+        "bi_rank": 4,
+        "cosine": 0.513,
+        "ce_rank": 4,
+        "ce_score": 0.29,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 13,
+        "section": "3",
+        "starts with": "Non-degree Students A non-degree student is a student regist",
+        "bi_rank": 8,
+        "cosine": 0.482,
+        "ce_rank": 5,
+        "ce_score": -1.47,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 71,
+        "section": "7.4",
+        "starts with": "(3) If a student is absent from the Institute for more than ",
+        "bi_rank": 6,
+        "cosine": 0.492,
+        "ce_rank": 6,
+        "ce_score": -1.62,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 11,
+        "section": "3",
+        "starts with": "(1) The admission of a candidate to the undergraduate progra",
+        "bi_rank": 3,
+        "cosine": 0.527,
+        "ce_rank": 7,
+        "ce_score": -1.83,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 81,
+        "section": "8.2",
+        "starts with": "A student enrolled in a B.Tech. program is eligible for grad",
+        "bi_rank": 5,
+        "cosine": 0.509,
+        "ce_rank": 8,
+        "ce_score": -2.56,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 68,
+        "section": "7.4",
+        "starts with": "(1) A student is expected to attend all classes. For any abs",
+        "bi_rank": 10,
+        "cosine": 0.474,
+        "ce_rank": 9,
+        "ce_score": -6.06,
         "shift": 1,
         "GOLD": ""
       },
       {
-        "chunk": 22,
-        "clauses": "5.1.1, 5.1.2",
+        "chunk": 70,
+        "section": "7.4",
+        "starts with": "Any circumstance leading to more than four semester leave/dr",
+        "bi_rank": 7,
+        "cosine": 0.49,
+        "ce_rank": 10,
+        "ce_score": -7.79,
+        "shift": -3,
+        "GOLD": ""
+      }
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "No, a student expelled from another institute on disciplinary grounds is not eligible for admission to IIIT-Delhi. According to Section 9 of the IIIT-Delhi Regulations, such actions do not constitute grounds for admission.",
+        "answer2": "No, a student whose program had been terminated at any other university/institute on disciplinary grounds is not eligible for admission at IIIT-Delhi.",
+        "s1": 3.5404561159994046,
+        "s2": 2.4131886470004247,
+        "tok1": 47,
+        "tok2": 31,
+        "ok1": true,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "No, candidates whose program had been terminated at any other university or institute on disciplinary grounds are not eligible for admission at IIIT-Delhi. This restriction is explicitly stated in Section 3: Admission.",
+        "s1": 0.7033195909989445,
+        "s2": 1.3992858450001222,
+        "tok1": 9,
+        "tok2": 42,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "Yes, students expelled from other institutes are generally not eligible to apply directly to IIIT Delhi unless they have completed their studies elsewhere and meet all eligibility criteria.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "No, a student expelled from another institute on disciplinary grounds is not eligible for admission to IIIT-Delhi.",
+        "correct": true
+      }
+    }
+  },
+  {
+    "category": "Other: vital chunk buried at rank 4-10",
+    "query": "When is a student's program terminated for poor academic performance?",
+    "gold": [
+      "low SGPA (of <4.0) in two consecutive semesters"
+    ],
+    "expected": "When the student gets an academic warning for low SGPA (below 4.0) in two consecutive semesters and/or gets two or more F grades in each of two consecutive semesters.",
+    "why": "Sec 7 (general 'may be terminated'), leave-termination and appeals chunks outrank the actual rule in Sec 7.3.",
+    "gold_chunk": 67,
+    "baseline_rank": 6,
+    "rerank_rank": 3,
+    "baseline_top3": [
+      "7",
+      "7.4",
+      "6.6"
+    ],
+    "rerank_top3": [
+      "7",
+      "7.5",
+      "7.3"
+    ],
+    "table": [
+      {
+        "chunk": 62,
+        "section": "7",
+        "starts with": "For continuing in the undergraduate program, the student has",
         "bi_rank": 1,
-        "cosine": 0.519,
+        "cosine": 0.642,
+        "ce_rank": 1,
+        "ce_score": 6.22,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 72,
+        "section": "7.5",
+        "starts with": "A student, whose program has been terminated, may appeal aga",
+        "bi_rank": 4,
+        "cosine": 0.565,
         "ce_rank": 2,
-        "ce_score": -2.88,
+        "ce_score": 3.94,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 67,
+        "section": "7.3",
+        "starts with": "Rules for promotion to next semester for 1st year (Only Repe",
+        "bi_rank": 6,
+        "cosine": 0.531,
+        "ce_rank": 3,
+        "ce_score": 3.4,
+        "shift": 3,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 65,
+        "section": "7.2",
+        "starts with": "A student shall be placed under academic warning/probation “",
+        "bi_rank": 7,
+        "cosine": 0.519,
+        "ce_rank": 4,
+        "ce_score": 2.82,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 70,
+        "section": "7.4",
+        "starts with": "Any circumstance leading to more than four semester leave/dr",
+        "bi_rank": 2,
+        "cosine": 0.585,
+        "ce_rank": 5,
+        "ce_score": 2.18,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 11,
+        "section": "3",
+        "starts with": "(1) The admission of a candidate to the undergraduate progra",
+        "bi_rank": 9,
+        "cosine": 0.501,
+        "ce_rank": 6,
+        "ce_score": -4.28,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 54,
+        "section": "6.6",
+        "starts with": "(3) The grades in courses will be announced over ERP at the ",
+        "bi_rank": 3,
+        "cosine": 0.571,
+        "ce_rank": 7,
+        "ce_score": -4.84,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 63,
+        "section": "7.1",
+        "starts with": "Rules for the first year (excluding the summer term schedule",
+        "bi_rank": 8,
+        "cosine": 0.508,
+        "ce_rank": 8,
+        "ce_score": -5.71,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 85,
+        "section": "8.5",
+        "starts with": "June 21 for the students who finish their requirements durin",
+        "bi_rank": 5,
+        "cosine": 0.546,
+        "ce_rank": 9,
+        "ce_score": -6.9,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 68,
+        "section": "7.4",
+        "starts with": "(1) A student is expected to attend all classes. For any abs",
+        "bi_rank": 10,
+        "cosine": 0.488,
+        "ce_rank": 10,
+        "ce_score": -7.03,
+        "shift": 0,
+        "GOLD": ""
+      }
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "A student's program is terminated for poor academic performance if their academic performance falls below satisfactory standards as defined by the Senate. This could lead to actions such as repeating the first year, being placed under warning, or having the program terminated altogether.",
+        "answer2": "According to Section 7.3 of the regulations, a student's program will be terminated if they get academic warnings due to low SGPA (<4.0) in two consecutive semesters and/or receive two or more F grades each in two consecutive semesters.",
+        "s1": 3.5221197129994835,
+        "s2": 3.835506230001556,
+        "tok1": 49,
+        "tok2": 54,
+        "ok1": false,
+        "ok2": true
+      },
+      "Qwen3.8-27B": {
+        "answer1": "According to Section 7, a student's program may be terminated if their academic performance falls short of the satisfactory standards defined by the Senate. Additionally, Section 7.4 specifies that any circumstance leading to more than four semester leaves or drops results in the automatic termination of the program.",
+        "answer2": "A student's program is terminated if they receive an academic warning due to a low SGPA of less than 4.0 in two consecutive semesters and/or receive two or more F grades in each of two consecutive semesters [Section 7.3]. Additionally, the program may be terminated if the student's overall academic performance falls short of the satisfactory standards defined by the Senate [Section 7].",
+        "s1": 1.5419732560003467,
+        "s2": 2.1544939769992197,
+        "tok1": 58,
+        "tok2": 82,
+        "ok1": false,
+        "ok2": true
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "A student's program at IIIT-Delhi can be terminated for poor academic performance if they fail to meet the minimum CGPA requirement or complete their courses within the stipulated time frame, as per the university's regulations.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "A student's program is terminated if they fail to maintain a minimum Cumulative Grade Point Average (CGPA) of 5.00 (on a 10-point scale) by the end of the 4th semester.",
+        "correct": false
+      }
+    }
+  },
+  {
+    "category": "Counter-example: re-ranking hurts",
+    "query": "Does a failing grade stay on my grade sheet after I clear the course?",
+    "gold": [
+      "An F and X grade obtained in any course shall be reflected in the grade sheet"
+    ],
+    "expected": "Yes. An F/X grade remains reflected in the grade sheet; only the new grade is used for the CGPA.",
+    "why": "Bi-encoder has Sec 6.3(7) at rank 2; the cross-encoder prefers chunks about other grade types (S/X, Incomplete) and pushes it out of the top 3.",
+    "gold_chunk": 48,
+    "baseline_rank": 2,
+    "rerank_rank": 4,
+    "baseline_top3": [
+      "6.6",
+      "6.3",
+      "6.5"
+    ],
+    "rerank_top3": [
+      "6.3",
+      "6.3",
+      "6.3"
+    ],
+    "table": [
+      {
+        "chunk": 46,
+        "section": "6.3",
+        "starts with": "(4) In certain courses, such as Online Courses (OC, Self-Gro",
+        "bi_rank": 7,
+        "cosine": 0.483,
+        "ce_rank": 1,
+        "ce_score": -0.28,
+        "shift": 6,
+        "GOLD": ""
+      },
+      {
+        "chunk": 45,
+        "section": "6.3",
+        "starts with": "(3) An I (Incomplete) grade may be awarded in cases when all",
+        "bi_rank": 4,
+        "cosine": 0.52,
+        "ce_rank": 2,
+        "ce_score": -1.37,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 43,
+        "section": "6.3",
+        "starts with": "I (Incomplete) Nil Incomplete (I grade) must be converted to",
+        "bi_rank": 6,
+        "cosine": 0.504,
+        "ce_rank": 3,
+        "ce_score": -2.14,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 48,
+        "section": "6.3",
+        "starts with": "(7) An F and X grade obtained in any course shall be reflect",
+        "bi_rank": 2,
+        "cosine": 0.561,
+        "ce_rank": 4,
+        "ce_score": -2.33,
+        "shift": -2,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 54,
+        "section": "6.6",
+        "starts with": "(3) The grades in courses will be announced over ERP at the ",
+        "bi_rank": 1,
+        "cosine": 0.579,
+        "ce_rank": 5,
+        "ce_score": -2.59,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 51,
+        "section": "6.5",
+        "starts with": "(ii) UG students to repeat (Improvement) of a particular cou",
+        "bi_rank": 3,
+        "cosine": 0.537,
+        "ce_rank": 6,
+        "ce_score": -3.3,
+        "shift": -3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 49,
+        "section": "6.4",
+        "starts with": "As mentioned in Ordinances, a letter grade, once awarded, sh",
+        "bi_rank": 5,
+        "cosine": 0.505,
+        "ce_rank": 7,
+        "ce_score": -3.54,
+        "shift": -2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 63,
+        "section": "7.1",
+        "starts with": "Rules for the first year (excluding the summer term schedule",
+        "bi_rank": 9,
+        "cosine": 0.45,
+        "ce_rank": 8,
+        "ce_score": -5.61,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 62,
+        "section": "7",
+        "starts with": "For continuing in the undergraduate program, the student has",
+        "bi_rank": 8,
+        "cosine": 0.459,
+        "ce_rank": 9,
+        "ce_score": -10.46,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 96,
+        "section": "CH",
+        "starts with": "(ii) Grade improvement in summer courses. Applicable from 20",
+        "bi_rank": 10,
+        "cosine": 0.436,
+        "ce_rank": 10,
+        "ce_score": -10.6,
+        "shift": 0,
+        "GOLD": ""
+      }
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "No, a failing grade such as 'F' will not be reflected in the grade sheet once the course is successfully passed. According to Section 6.3 of the regulations, when a course is replaced or repeated, the new grade will be used for computing the cumulative GPA (CGPA), but the original 'F' grade will not affect the Semester GPA (SGPA).",
+        "answer2": "No, a failing grade stays on your grade sheet even if you pass the course. According to Section 6.3 of the regulations, \"F and X grades are fail grades and the student shall be required to repeat the course.\"",
+        "s1": 5.52005595799892,
+        "s2": 3.656726933000755,
+        "tok1": 77,
+        "tok2": 48,
+        "ok1": false,
+        "ok2": false
+      },
+      "Qwen3.8-27B": {
+        "answer1": "Yes, an F grade obtained in any course shall be reflected in the grade sheet even after the course is cleared. However, when the course is repeated, the new grade will be used for the computation of the CGPA, while the F grade is not counted in the CGPA calculation [Section 6.3(7)].",
+        "answer2": "According to Section 6.3(5), if a student receives a failing grade (F or X) in a compulsory course, they are required to repeat the same course in another semester or summer when it is offered. The provided context does not explicitly state whether the original failing grade is removed or replaced on the transcript after the course is cleared, only that the student must repeat the course.",
+        "s1": 1.7326950460010266,
+        "s2": 2.167838772000323,
+        "tok1": 67,
+        "tok2": 80,
+        "ok1": true,
+        "ok2": false
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "No, a failing grade does not typically remain on a student's transcript or grade sheet even after passing the course.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "No, a failing grade does not stay on your grade sheet after you clear the course; the final grade recorded is the one from the successful attempt.",
+        "correct": false
+      }
+    }
+  },
+  {
+    "category": "Counter-example: re-ranking hurts",
+    "query": "How long can I stay enrolled before I run out of time to finish my degree?",
+    "gold": [
+      "six years (12 semesters)"
+    ],
+    "expected": "Six years (12 semesters) at most, including leave and repeated semesters.",
+    "why": "Sec 8.1 (maximum six years) is at bi-encoder rank 3 but the cross-encoder ranks it 4th.",
+    "gold_chunk": 80,
+    "baseline_rank": 3,
+    "rerank_rank": 4,
+    "baseline_top3": [
+      "7.4",
+      "8.5",
+      "8.1"
+    ],
+    "rerank_top3": [
+      "7.4",
+      "6.2",
+      "7.4"
+    ],
+    "table": [
+      {
+        "chunk": 70,
+        "section": "7.4",
+        "starts with": "Any circumstance leading to more than four semester leave/dr",
+        "bi_rank": 1,
+        "cosine": 0.607,
+        "ce_rank": 1,
+        "ce_score": -1.5,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 40,
+        "section": "6.2",
+        "starts with": "For medical reasons, only two medical applications including",
+        "bi_rank": 10,
+        "cosine": 0.475,
+        "ce_rank": 2,
+        "ce_score": -3.17,
+        "shift": 8,
+        "GOLD": ""
+      },
+      {
+        "chunk": 68,
+        "section": "7.4",
+        "starts with": "(1) A student is expected to attend all classes. For any abs",
+        "bi_rank": 6,
+        "cosine": 0.498,
+        "ce_rank": 3,
+        "ce_score": -3.31,
+        "shift": 3,
+        "GOLD": ""
+      },
+      {
+        "chunk": 80,
+        "section": "8.1",
+        "starts with": "The minimum duration for completing the B.Tech. program is 8",
+        "bi_rank": 3,
+        "cosine": 0.512,
+        "ce_rank": 4,
+        "ce_score": -4.48,
+        "shift": -1,
+        "GOLD": "★"
+      },
+      {
+        "chunk": 71,
+        "section": "7.4",
+        "starts with": "(3) If a student is absent from the Institute for more than ",
+        "bi_rank": 9,
+        "cosine": 0.482,
+        "ce_rank": 5,
+        "ce_score": -5.14,
+        "shift": 4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 85,
+        "section": "8.5",
+        "starts with": "June 21 for the students who finish their requirements durin",
+        "bi_rank": 2,
+        "cosine": 0.515,
+        "ce_rank": 6,
+        "ce_score": -5.63,
+        "shift": -4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 5,
+        "section": "2",
+        "starts with": "c) Summer Term. Starts around last week of May and ends arou",
+        "bi_rank": 8,
+        "cosine": 0.486,
+        "ce_rank": 7,
+        "ce_score": -5.69,
+        "shift": 1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 62,
+        "section": "7",
+        "starts with": "For continuing in the undergraduate program, the student has",
+        "bi_rank": 7,
+        "cosine": 0.49,
+        "ce_rank": 8,
+        "ce_score": -6.38,
         "shift": -1,
         "GOLD": ""
       },
       {
         "chunk": 69,
-        "clauses": "A.5.3, A.5.4, A.5.5, A.6",
-        "bi_rank": 8,
-        "cosine": 0.417,
-        "ce_rank": 3,
-        "ce_score": -3.16,
-        "shift": 5,
-        "GOLD": ""
-      },
-      {
-        "chunk": 105,
-        "clauses": "III.5, III.5.1",
-        "bi_rank": 9,
-        "cosine": 0.403,
-        "ce_rank": 4,
-        "ce_score": -4.56,
-        "shift": 5,
-        "GOLD": ""
-      },
-      {
-        "chunk": 32,
-        "clauses": "6.9, 6.10, 6.10.1",
-        "bi_rank": 3,
-        "cosine": 0.447,
-        "ce_rank": 5,
-        "ce_score": -4.57,
-        "shift": -2,
-        "GOLD": "★"
-      },
-      {
-        "chunk": 23,
-        "clauses": "5.2.1, 5.2.2",
-        "bi_rank": 4,
-        "cosine": 0.422,
-        "ce_rank": 6,
-        "ce_score": -6.8,
-        "shift": -2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 106,
-        "clauses": "III.5.2, III.5.3, III.6",
-        "bi_rank": 10,
-        "cosine": 0.392,
-        "ce_rank": 7,
-        "ce_score": -7.29,
-        "shift": 3,
-        "GOLD": ""
-      },
-      {
-        "chunk": 118,
-        "clauses": "Glossary",
-        "bi_rank": 6,
-        "cosine": 0.419,
-        "ce_rank": 8,
-        "ce_score": -7.96,
-        "shift": -2,
-        "GOLD": ""
-      },
-      {
-        "chunk": 31,
-        "clauses": "6.7.2, 6.8",
+        "section": "7.4",
+        "starts with": "(2) A student may be allowed to take semester leave, with pe",
         "bi_rank": 5,
-        "cosine": 0.419,
+        "cosine": 0.501,
         "ce_rank": 9,
-        "ce_score": -8.55,
+        "ce_score": -6.44,
         "shift": -4,
         "GOLD": ""
       },
       {
-        "chunk": 119,
-        "clauses": "Glossary",
-        "bi_rank": 7,
-        "cosine": 0.418,
+        "chunk": 63,
+        "section": "7.1",
+        "starts with": "Rules for the first year (excluding the summer term schedule",
+        "bi_rank": 4,
+        "cosine": 0.509,
         "ce_rank": 10,
-        "ce_score": -8.79,
-        "shift": -3,
+        "ce_score": -6.47,
+        "shift": -6,
         "GOLD": ""
       }
-    ]
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "According to Section 8.1 of the regulations, the minimum duration for completing the B.Tech. program is 8 semesters, excluding any semester leaves or repeated semesters. Therefore, you have up to 8 semesters from your first registration date to complete all requirements before running out of time to finish your degree.",
+        "answer2": "According to Section 7.4 of the regulations, a student must necessarily be registered and physically present on campus for 8 semesters during their degree program, except for the last semester where they can go for internship if eligible. Therefore, a student can stay enrolled for up to 8 semesters before running out of time to complete their degree.",
+        "s1": 4.841894410999885,
+        "s2": 5.063178209000398,
+        "tok1": 67,
+        "tok2": 71,
+        "ok1": false,
+        "ok2": false
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The maximum duration within which you must complete the B.Tech. program requirements is six years, which corresponds to 12 semesters. This timeframe includes any semesters in which you took a semester leave or repeated a semester or year. [Section 8.1]",
+        "answer2": "According to Section 7.4, a student must be registered and physically present on campus for 8 semesters during the degree program. Any circumstance leading to more than four semester leaves or drops may result in the automatic termination of the program.",
+        "s1": 1.5339050670008874,
+        "s2": 1.5674165689997608,
+        "tok1": 56,
+        "tok2": 50,
+        "ok1": true,
+        "ok2": false
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "The duration for which a student at IIIT-Delhi can remain enrolled and complete their Bachelor of Technology (B.Tech) program is typically four years, though this may vary depending on individual circumstances such as transfer credits or special programs offered by the university.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "IIIT-Delhi allows a maximum of 8 semesters (4 years) to complete the B.Tech degree. If you do not fulfill all academic requirements within this period, you are typically required to withdraw from the program.",
+        "correct": false
+      }
+    }
   },
   {
-    "category": "Counter-example: re-ranking hurts (negation)",
-    "query": "Is the arbiter allowed to tell players how many moves have been made?",
+    "category": "Limitation: neither pipeline finds it",
+    "query": "How many credits do I need in total to get my degree?",
     "gold": [
-      "12.6"
+      "minimum number of credits for a B.Tech. program is 156",
+      "156 credits required for completion",
+      "156 credits, required for graduation"
     ],
-    "why": "12.6 ('shall not indicate the number of moves completed') is rank 2 for the bi-encoder; the cross-encoder rewards passages that literally talk about counting moves (7.3, 9.3) and drops it to rank 7.",
-    "gold_chunk": 62,
-    "baseline_rank": 2,
+    "expected": "156 credits (including 2 credits each of SG and CW).",
+    "why": "The question shares 'credits' with every chunk about course credit sizes and loads (Sec 4, 5.8). The 156-credit rule sits at bi-encoder ranks 6 and 10; re-ranking only reaches rank 7.",
+    "gold_chunk": 57,
+    "baseline_rank": 6,
     "rerank_rank": 7,
     "baseline_top3": [
-      "11.9",
-      "12.4",
-      "A.4.1"
+      "5.8",
+      "4",
+      "4"
     ],
     "rerank_top3": [
-      "7.3",
-      "9.3.1",
-      "8.6"
+      "5.8",
+      "5.8",
+      "4"
     ],
-    "answer1": "No, the arbiter shall refrain from informing a player that his/her opponent has completed a move. This is stated clearly in Article 12.6 of Passage 2.",
-    "answer2": "No, the arbiter is not explicitly allowed to tell players how many moves have been made according to the given context. The context does not provide information on the arbiter's role in informing players about the number of moves.",
-    "llm_s_1": 8.946051300000363,
-    "llm_s_2": 10.344799599999533,
     "table": [
       {
-        "chunk": 36,
-        "clauses": "7.3, 7.4, 7.4.1, 7.4.2, 7.4.3",
-        "bi_rank": 9,
-        "cosine": 0.551,
+        "chunk": 30,
+        "section": "5.8",
+        "starts with": "In general, students will take courses as per the program. N",
+        "bi_rank": 1,
+        "cosine": 0.601,
         "ce_rank": 1,
-        "ce_score": 5.34,
-        "shift": 8,
-        "GOLD": ""
-      },
-      {
-        "chunk": 51,
-        "clauses": "9.3.1, 9.3.2, 9.4, 9.5",
-        "bi_rank": 10,
-        "cosine": 0.535,
-        "ce_rank": 2,
-        "ce_score": 5.31,
-        "shift": 8,
-        "GOLD": ""
-      },
-      {
-        "chunk": 46,
-        "clauses": "8.6, 8.7",
-        "bi_rank": 6,
-        "cosine": 0.59,
-        "ce_rank": 3,
-        "ce_score": 5.18,
-        "shift": 3,
-        "GOLD": ""
-      },
-      {
-        "chunk": 66,
-        "clauses": "A.4.1, A.4.2, A.4.3, A.5, A.5.1",
-        "bi_rank": 3,
-        "cosine": 0.642,
-        "ce_rank": 4,
-        "ce_score": 4.91,
-        "shift": -1,
-        "GOLD": ""
-      },
-      {
-        "chunk": 34,
-        "clauses": "6.11.4, 6.12.1, 6.12.2",
-        "bi_rank": 5,
-        "cosine": 0.591,
-        "ce_rank": 5,
-        "ce_score": 4.87,
+        "ce_score": 1.06,
         "shift": 0,
         "GOLD": ""
       },
       {
-        "chunk": 60,
-        "clauses": "11.9, 11.10, 11.11, 11.12",
-        "bi_rank": 1,
-        "cosine": 0.682,
-        "ce_rank": 6,
-        "ce_score": 3.39,
-        "shift": -5,
+        "chunk": 35,
+        "section": "5.8",
+        "starts with": "(3) Must have completed all core courses and other graduatio",
+        "bi_rank": 7,
+        "cosine": 0.534,
+        "ce_rank": 2,
+        "ce_score": 0.25,
+        "shift": 5,
         "GOLD": ""
       },
       {
-        "chunk": 62,
-        "clauses": "12.4, 12.5, 12.6",
+        "chunk": 14,
+        "section": "4",
+        "starts with": "(1) Every semester the Institute offers some courses, taught",
         "bi_rank": 2,
-        "cosine": 0.647,
+        "cosine": 0.589,
+        "ce_rank": 3,
+        "ce_score": -0.83,
+        "shift": -1,
+        "GOLD": ""
+      },
+      {
+        "chunk": 15,
+        "section": "4",
+        "starts with": "b) A 2-credit course. The course will have 1.5 hours of lect",
+        "bi_rank": 4,
+        "cosine": 0.55,
+        "ce_rank": 4,
+        "ce_score": -1.76,
+        "shift": 0,
+        "GOLD": ""
+      },
+      {
+        "chunk": 33,
+        "section": "5.8",
+        "starts with": "Students can avail underload below 12 credits (as low as 4 c",
+        "bi_rank": 9,
+        "cosine": 0.524,
+        "ce_rank": 5,
+        "ce_score": -2.05,
+        "shift": 4,
+        "GOLD": ""
+      },
+      {
+        "chunk": 34,
+        "section": "5.8",
+        "starts with": "(4) Must have been left with 4 credits of IP/IS/UR/Online co",
+        "bi_rank": 8,
+        "cosine": 0.528,
+        "ce_rank": 6,
+        "ce_score": -2.08,
+        "shift": 2,
+        "GOLD": ""
+      },
+      {
+        "chunk": 80,
+        "section": "8.1",
+        "starts with": "The minimum duration for completing the B.Tech. program is 8",
+        "bi_rank": 10,
+        "cosine": 0.517,
         "ce_rank": 7,
-        "ce_score": 3.0,
-        "shift": -5,
+        "ce_score": -2.25,
+        "shift": 3,
         "GOLD": "★"
       },
       {
-        "chunk": 39,
-        "clauses": "7.5.5",
-        "bi_rank": 7,
-        "cosine": 0.575,
+        "chunk": 16,
+        "section": "4",
+        "starts with": "c) A 1-credit course. The course is likely to be run as a sh",
+        "bi_rank": 3,
+        "cosine": 0.555,
         "ce_rank": 8,
-        "ce_score": 2.64,
-        "shift": -1,
+        "ce_score": -2.42,
+        "shift": -5,
         "GOLD": ""
       },
       {
-        "chunk": 56,
-        "clauses": "11.2.4, 11.3, 11.3.1, 11.3.2",
-        "bi_rank": 8,
-        "cosine": 0.573,
+        "chunk": 57,
+        "section": "6.8",
+        "starts with": "B.Tech. students are allowed to do “extra credits\" beyond 15",
+        "bi_rank": 6,
+        "cosine": 0.535,
         "ce_rank": 9,
-        "ce_score": 1.15,
-        "shift": -1,
-        "GOLD": ""
+        "ce_score": -2.76,
+        "shift": -3,
+        "GOLD": "★"
       },
       {
-        "chunk": 70,
-        "clauses": "B.1, B.2, B.2.1, B.2.2, B.2.3",
-        "bi_rank": 4,
-        "cosine": 0.598,
+        "chunk": 82,
+        "section": "8.3",
+        "starts with": "A student enrolled in a B.Tech. program may also graduate wi",
+        "bi_rank": 5,
+        "cosine": 0.543,
         "ce_rank": 10,
-        "ce_score": 0.19,
-        "shift": -6,
+        "ce_score": -3.79,
+        "shift": -5,
         "GOLD": ""
       }
-    ]
+    ],
+    "answers": {
+      "Qwen2.5-1.5B": {
+        "answer1": "To determine the total number of credits needed for your degree, refer to Section 5.8 of the regulations. It states that \"Normal load for the first- and second-year students is 16-20 credits\" and \"For the third- and fourth-year students is 16-22 credits.\" This information outlines the typical academic load required for different years of study at IIIT-Delhi.",
+        "answer2": "To get your degree, you typically need to complete between 16-22 credits depending on whether you're in the first or second year, respectively.",
+        "s1": 6.11919051500081,
+        "s2": 2.54012328600038,
+        "tok1": 86,
+        "tok2": 33,
+        "ok1": false,
+        "ok2": false
+      },
+      "Qwen3.8-27B": {
+        "answer1": "The provided context does not answer this.",
+        "answer2": "The provided context does not answer this.",
+        "s1": 0.678523242000665,
+        "s2": 0.7516096720009955,
+        "tok1": 9,
+        "tok2": 9,
+        "ok1": false,
+        "ok2": false
+      }
+    },
+    "closed_book": {
+      "Qwen2.5-1.5B": {
+        "answer": "I'm sorry, but I don't have enough information to answer this question accurately. The number of credits required for a degree can vary depending on the institution and program. For example, at IIIT-Delhi, students typically complete around 300-400 credits over four years to earn their Bachelor of Technology (B.Tech) degree. However, without more specific details about the particular program or institution you're interested in, it's difficult to provide an exact figure. If you could give me more context or specify which program you're asking about, I'd be happy to try to find that information for you.",
+        "correct": false
+      },
+      "Qwen3.8-27B": {
+        "answer": "You need a total of 160 credits to complete the B.Tech. degree at IIIT-Delhi.",
+        "correct": false
+      }
+    }
   }
 ]

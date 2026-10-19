@@ -1,0 +1,4 @@
+,Qwen2.5-1.5B,Qwen3.8-27B
+closed-book (no context),0,1
+Answer 1 (baseline top-3),2,3
+Answer 2 (re-ranked top-3),9,9
